@@ -6,7 +6,7 @@ public class MultipleVariables {
         int number2 = number1;
         System.out.println("Sum of number1 & number2 = "+(number1+number2)); // 10
         number1=10;
-        System.out.println("number2 = "+number2); // 5
+        System.out.println("number2 = "+number2); // 5 ; number2 = number1 is a one time action
 
         double number3, number4;
         number3 = 5.0;
