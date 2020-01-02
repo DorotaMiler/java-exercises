@@ -14,5 +14,27 @@ public class Operators {
         System.out.println(c);
         c = a % b;
         System.out.println(c);
+        c = 17 + 6;
+        System.out.println(c);
+        int result = 2 + 2*2; // 6
+        System.out.println(result);
+
+        int d = 18;
+        double e = 5.0;
+        d += e;  // d = d + e
+        System.out.println(a);
+        d -= e;  // d = d - e
+        d *= e;  // d = d * e
+        d /= e;  // d = d / e
+        d %= e;  // d = d % e
+        System.out.println(d);
+
+        int x = 5;
+        int y = 3;
+        int z = x + y++;  // z = x + y, and afterwards y = y + 1
+        System.out.println(y);
+        System.out.println(z);
+        z = (x++) + y;  // z = x + y, and then afterwards x = x + 1
+
     }
 }
