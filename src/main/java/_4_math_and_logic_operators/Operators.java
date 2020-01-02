@@ -31,10 +31,15 @@ public class Operators {
 
         int x = 5;
         int y = 3;
-        int z = x + y++;  // z = x + y, and afterwards y = y + 1
+        int z = x + y++;  // z = x + y, and afterwards y = y + 1 so y = 3 still
         System.out.println(y);
         System.out.println(z);
-        z = (x++) + y;  // z = x + y, and then afterwards x = x + 1
-
+        z = y + x++;  /* z = x + y, and then afterwards x = x + 1
+                         y = 4, x = 5 still
+                      */
+        System.out.println(x);
+        System.out.println(z);
+        z = y + x;
+        System.out.println(z);  // 10 - both y & x are incremented by 1 already
     }
 }
