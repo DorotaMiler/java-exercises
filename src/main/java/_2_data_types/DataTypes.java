@@ -10,7 +10,7 @@ public class DataTypes{
         System.out.println('a'+'A'); // char
         System.out.println(1+4);  // f.ex. byte
         System.out.println(1.0+2.0); // float
-        System.out.println("quatation mark \""); // \"
+        System.out.println("quotation mark \""); // \"
         System.out.println("apostrophe \'");  // \'
         System.out.println("backslash \\");  // \\
         System.out.println("new line \n");  // \n
