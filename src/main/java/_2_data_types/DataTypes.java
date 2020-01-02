@@ -14,5 +14,7 @@ public class DataTypes{
         System.out.println("apostrophe \'");  // \'
         System.out.println("backslash \\");  // \\
         System.out.println("new line \n");  // \n
+        System.out.println("Wynik to: "+1+2+3);  // dodawanie od lewej do prawej
+        System.out.println(1+2+3+" to wynik");
     }
 }
