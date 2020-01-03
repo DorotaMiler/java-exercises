@@ -63,5 +63,17 @@ public class Operators {
         System.out.println("result3 = "+result3);
         boolean conjunction1 = result1 && result3;  // false -> true&&false=false
         System.out.println("conjunction1 = "+conjunction1);
+
+        /*  !important: we do not compare Objects nor chains with ==
+        == compares references, not the very objects
+        in order to compare objects to use method
+        equals()
+         */
+        String me = "Dorota";
+        String you = "Lukas";
+        boolean comparison1 = me == you;
+        boolean comparison2 = me.equals(you);
+        System.out.println(comparison1);
+        System.out.println(comparison2);
     }
 }
