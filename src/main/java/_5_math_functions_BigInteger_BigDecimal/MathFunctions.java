@@ -5,4 +5,6 @@ public class MathFunctions {
     //  pow(double a, double b)  -> power (potega) result = a powered to b
     //  abs(number)  -> absolute value of any number
 
+    // more functions:  https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html
+
 }
