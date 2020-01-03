@@ -53,7 +53,15 @@ public class Operators {
         //  Condition? statement1 : statement2   -> 3 arguments operator
 
         //  Logical operators
-        
-
+        int first = 5;
+        int second = 3;
+        boolean result1 = first > second;  // true
+        System.out.println("result1 = "+result1);
+        boolean result2 = first < second;  // false
+        System.out.println("result2 = "+result2);
+        boolean result3 = first == second;  //  false
+        System.out.println("result3 = "+result3);
+        boolean conjunction1 = result1 && result3;  // false -> true&&false=false
+        System.out.println("conjunction1 = "+conjunction1);
     }
 }
