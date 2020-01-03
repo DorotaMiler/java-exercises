@@ -20,5 +20,9 @@ public class MathFunctions {
 
         System.out.println("radical from "+a+" = "+sqrt);
         System.out.println("Number "+a+" powered to "+b+" = "+power);
+
+        // liczba PI  -> Math.PI
+        // Liczba E  -> Math.E
+
     }
 }
