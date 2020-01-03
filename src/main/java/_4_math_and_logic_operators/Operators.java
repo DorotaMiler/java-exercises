@@ -2,6 +2,8 @@ package _4_math_and_logic_operators;
 
 public class Operators {
     public static void main(String[] args) {
+
+        //  Mathematical operators
         int a = 17;
         int b = 4;
         int c = a + b;  // 21
@@ -41,5 +43,17 @@ public class Operators {
         System.out.println(z);
         z = y + x;
         System.out.println(z);  // 10 - both y & x are incremented by 1 already
+
+        //  Comparing operators
+        boolean comparison = x == y;
+        System.out.println(comparison);  // false (x different than (not equal) y)
+        System.out.println(x >= y);  // true
+        System.out.println(y != 4);  // true
+
+        //  Condition? statement1 : statement2   -> 3 arguments operator
+
+        //  Logical operators
+        
+
     }
 }
