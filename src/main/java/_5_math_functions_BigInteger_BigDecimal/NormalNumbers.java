@@ -5,7 +5,7 @@ public class NormalNumbers {
         double a = 9.5;
         double b = 4;
         double c = 0.33;
-        System.out.println("Calculation of a, b & c = "+(a/b*c)); // not precise result due
+        System.out.println("Calculation of a, b & c = " + (a / b * c)); // not precise result due
         // to a fact that doubles are only rounded numbers
     }
 }

@@ -7,7 +7,7 @@ public class TextVariables {
         String greetings = hello + world;  //  concatenation of 2 texts
         System.out.println(greetings);
 
-        String helloStudent = greetings.substring(0,6)+"student";
+        String helloStudent = greetings.substring(0, 6) + "student";
         System.out.println(helloStudent);
     }
 }

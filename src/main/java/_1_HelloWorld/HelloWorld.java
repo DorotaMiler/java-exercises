@@ -2,8 +2,9 @@ package _1_HelloWorld;
 
 /**
  * this type of multi-line comment is used in program's documentation creation
- HelloWorld1 java class addition
- @param args - parameters passed after the program is run
+ * HelloWorld1 java class addition
+ *
+ * @param args - parameters passed after the program is run
  */
 
 public class HelloWorld {

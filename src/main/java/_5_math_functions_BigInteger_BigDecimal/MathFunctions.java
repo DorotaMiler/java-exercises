@@ -18,8 +18,8 @@ public class MathFunctions {
         double sqrt = sqrt(a);
         double power = pow(a, b);
 
-        System.out.println("radical from "+a+" = "+sqrt);
-        System.out.println("Number "+a+" powered to "+b+" = "+power);
+        System.out.println("radical from " + a + " = " + sqrt);
+        System.out.println("Number " + a + " powered to " + b + " = " + power);
 
         // liczba PI  -> Math.PI
         // Liczba E  -> Math.E
