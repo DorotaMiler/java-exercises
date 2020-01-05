@@ -14,5 +14,13 @@ public class Conversions {
         double y = 13.5;
         int z = (int) b / a;  // some data lost, decimal cut out
         System.out.println("z = " + z);  // Math.round() rounds the number, here it is gotten rid of
+
+        /* not necessary action as done automatically
+        int a = 5;
+        double b = 13.5;
+        double c = b / (double) a;
+         */
+
+
     }
 }
