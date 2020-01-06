@@ -88,5 +88,6 @@ public class Operators {
         System.out.println("&& (and) second comparison = " + w);
         System.out.println("|| (or) first comparison = " + r);
         System.out.println("|| (or) second comparison = " + t);
+
     }
 }
