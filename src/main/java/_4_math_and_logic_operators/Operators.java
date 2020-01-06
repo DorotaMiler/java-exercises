@@ -75,5 +75,18 @@ public class Operators {
         boolean comparison2 = me.equals(you);
         System.out.println(comparison1);
         System.out.println(comparison2);
+
+        int v = 1;
+        int o = 1;
+        int n = 2;
+        boolean q = v == o && n > o;  //  true && true => true
+        boolean w = v <= o && n <= v;  // true && false => false
+        boolean r = v == o || n > o;   // true || true => true
+        boolean t = v <= o || n <= v;  // true || false => true
+
+        System.out.println("&& (and) first comparison = " + q);
+        System.out.println("&& (and) second comparison = " + w);
+        System.out.println("|| (or) first comparison = " + r);
+        System.out.println("|| (or) second comparison = " + t);
     }
 }
