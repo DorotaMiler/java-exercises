@@ -5,7 +5,7 @@ public class IfFunction {
 
         // first example
         int variable = 5;
-        if (variable % 2 == 0) {
+        if (variable % 2 == 0) {  // spr czy wynik dzielenia modulo tej liczby przez 2 daje 0
             System.out.println("variable is even");
         } else {
             System.out.println("variable is not even");
