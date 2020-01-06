@@ -1,4 +1,4 @@
-package _6_conversions_and_data_types_casting;
+package _6_data_types_casting_and_conversions;
 
 public class Conversions {
     public static void main(String[] args) {
