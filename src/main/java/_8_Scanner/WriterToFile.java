@@ -7,10 +7,9 @@ import java.util.Scanner;
 
 public class WriterToFile {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("dorota.txt");
-        Scanner scan = new Scanner(file.getAbsolutePath());
-        PrintWriter writer = new PrintWriter(file.getAbsolutePath());
+        PrintWriter writer = new PrintWriter("./src/main/java/_8_Scanner/dorota.txt");
         writer.println("Dorota has a cat and a cat has me");
+        writer.println("second check of writing to file for veryfication");
         writer.close();
     }
 }

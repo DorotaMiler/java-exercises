@@ -1,2 +1,2 @@
-hallo
-
+Dorota has a cat and a cat has me
+second check of writing to file for veryfication
