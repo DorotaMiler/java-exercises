@@ -10,7 +10,10 @@ public class ReadOut {
         //File file = new File("dorota.txt");
         //System.out.println(file.getAbsolutePath());
         Scanner scan = new Scanner(new File("./src/main/java/_8_Scanner/dorota.txt"));
-        String sentence = scan.nextLine();
-        System.out.println("Read-out sentence is: " + sentence);
+
+        while(scan.hasNextLine()) {
+            String sentence = scan.nextLine();
+            System.out.println(sentence);
+        }
     }
 }
