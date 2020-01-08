@@ -6,7 +6,7 @@ public class Table {
         for (int i = 0; i < 20; i++) {
             table[i] = i + 1;
         }
-        int variable = table[3];
+        int variable = table[3];  // variable = 4
         System.out.println("Chosen variable = " + variable);
 
         for (int j = 0; j < 20; j++) {
