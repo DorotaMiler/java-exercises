@@ -7,7 +7,7 @@ public class NumberAndString {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please write a number: ");
         int number = scan.nextInt();
-        scan.nextLine();
+        scan.nextLine();  // necessary when we load String afte a number
         System.out.println("Please write a word: ");
         String word = scan.nextLine();
 
