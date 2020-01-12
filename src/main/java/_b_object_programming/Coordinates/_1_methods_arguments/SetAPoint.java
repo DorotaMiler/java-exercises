@@ -12,6 +12,7 @@ public class SetAPoint {
         // System.out.println("Point's coordinates are: (" + point.coordinatesX + ", " + point.coordinatesY + ")");
         System.out.println("Point's coordinates are: (" + point.returnX() + ", " + point.returnY() + ")");
 
+        PointChange.increment(point);
         System.out.println("New point's coordinates are: (" + point.returnX() + ", " + point.returnY() + ")");
     }
 }
