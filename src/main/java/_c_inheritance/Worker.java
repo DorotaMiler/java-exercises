@@ -7,6 +7,7 @@ public class Worker {
     int payroll;
 
     public Worker() {
+        // Constructor
         name = "";
         lastName = "";
         payroll = 0;

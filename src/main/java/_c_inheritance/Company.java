@@ -14,6 +14,7 @@ public class Company {
         System.out.println("Payroll: " + boss.payroll);
         System.out.println("Bonus: " + boss.bonus + "\n");
 
+        // exemplary fields
         boss.name = "Adam";
         boss.lastName = "Kwiatkowski";
         boss.payroll = 5000;
