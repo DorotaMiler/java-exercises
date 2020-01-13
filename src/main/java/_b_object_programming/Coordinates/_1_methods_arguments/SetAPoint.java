@@ -14,5 +14,9 @@ public class SetAPoint {
 
         PointChange.increment(point);
         System.out.println("New point's coordinates are: (" + point.returnX() + ", " + point.returnY() + ")");
+
+        Point pointToChange = new Point();
+        // below method displays change in reference
+        pointToChange.runPointChange();
     }
 }

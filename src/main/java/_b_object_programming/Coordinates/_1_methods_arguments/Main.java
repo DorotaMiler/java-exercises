@@ -2,11 +2,9 @@ package _b_object_programming.Coordinates._1_methods_arguments;
 
 public class Main {
 
-
     public static void main(String[] args) {
         Main main = new Main();
         main.run();
-
     }
 
     private void run() {
@@ -24,5 +22,4 @@ public class Main {
         a = 10;
         return a + b + c;
     }
-
 }
