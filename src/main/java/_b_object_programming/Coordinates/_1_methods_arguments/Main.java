@@ -27,7 +27,7 @@ public class Main {
     private double addMultiple(double... numbers) {
         double sum = 0;
         for (double number : numbers) {
-            sum += sum + number;
+            sum += number;
         }
         return sum;
     }
