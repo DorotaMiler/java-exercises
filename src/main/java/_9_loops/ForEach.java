@@ -29,7 +29,7 @@ public class ForEach {
             System.out.println(name);
         }
 
-List<String> strings = Arrays.asList(names);
+        List<String> strings = Arrays.asList(names);
         System.out.println("\nLoop based on List git add ." +
                 "git commit -m ''example: ");
         for (String string : strings) {
