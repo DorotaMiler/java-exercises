@@ -24,5 +24,10 @@ public class Test {
         System.out.println("\nAGAIN (for comparison) Coordinates of object 'point' are: ");
         System.out.println("x: " + point.x);
         System.out.println("y: " + point.y);
+
+        point2.setPoint(8,9);
+        System.out.println("\nAfter setPoint() point2's coordinates:");
+        System.out.println("x2: " + point2.x);
+        System.out.println("y2: " + point2.y);
     }
 }
