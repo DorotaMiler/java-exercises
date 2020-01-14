@@ -11,7 +11,7 @@ public class Point {
         x = a;
         y = b;
     }
-    
+
     public Point(Point point){
         x = point.x;
         y = point.y;
