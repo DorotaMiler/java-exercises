@@ -5,6 +5,6 @@ public class Main {
         SUV suv = new SUV();
         suv.startEngine();
         suv.stop();
-        suv.move();
+        suv.move(120);
     }
 }

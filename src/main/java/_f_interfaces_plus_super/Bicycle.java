@@ -6,13 +6,17 @@ public class Bicycle implements Vehicle {
     @Override
     public void move(int velocity) {
         this.velocity = velocity;
-        System.out.println();
-
+        System.out.println("Bicycle moves with velocity: " + velocity);
     }
 
     @Override
     public void stop() {
         System.out.println("Bicycle stopped");
+    }
+
+    @Override
+    public void startEngine() {
+        System.out.println("Engine starts.Let's pedal Mevo!");
     }
 
     public void jump() {
