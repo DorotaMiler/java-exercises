@@ -7,6 +7,7 @@ public class Main {
         suv.stop();
         suv.move(135);
         suv.speeding(160);
+        suv.measureVelocity(100);
 
         Car car = new Car();
         System.out.println("\n");
@@ -14,6 +15,7 @@ public class Main {
         car.stop();
         car.move(20);
         car.drift();
+        car.measureVelocity(40);
 
         Bicycle bicycle = new Bicycle();
         System.out.println("\n");
@@ -21,5 +23,6 @@ public class Main {
         bicycle.stop();
         bicycle.move(10);
         bicycle.jump();
+        bicycle.measureVelocity(15);
     }
 }

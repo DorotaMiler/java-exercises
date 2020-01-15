@@ -21,4 +21,8 @@ public class SUV extends Car {
         System.out.println("Suv is speeding! The velocity of " + velocity + " is unacceptable!");
     }
 
+    @Override
+    public void measureVelocity(int velocity) {
+        super.measureVelocity(velocity);
+    }
 }

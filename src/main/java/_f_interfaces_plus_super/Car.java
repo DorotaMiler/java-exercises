@@ -23,4 +23,12 @@ public class Car implements Vehicle {
     public void startEngine() {
         System.out.println("Car's engine starts.Brum brum burm.");
     }
+
+    @Override
+    public void measureVelocity(int velocity) {
+        if (velocity < 100) {
+            return;
+        }
+        System.out.println("Velocity measured as HIGH!");
+    }
 }

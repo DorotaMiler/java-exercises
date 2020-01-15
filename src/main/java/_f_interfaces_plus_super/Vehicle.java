@@ -17,4 +17,6 @@ public interface Vehicle {
     void stop();
 
     void startEngine();
+
+    void measureVelocity(int velocity);
 }
