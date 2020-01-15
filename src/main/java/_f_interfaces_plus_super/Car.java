@@ -1,7 +1,8 @@
 package _f_interfaces_plus_super;
 
 public class Car implements Vehicle {
-    int velocity = 60;
+
+    int velocity;
 
     @Override
     public void move(int velocity) {
@@ -20,6 +21,6 @@ public class Car implements Vehicle {
 
     @Override
     public void startEngine() {
-        System.out.println("Engine starts.Brum brum burm.");
+        System.out.println("Car's engine starts.Brum brum burm.");
     }
 }

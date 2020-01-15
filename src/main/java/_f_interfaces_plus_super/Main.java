@@ -5,6 +5,21 @@ public class Main {
         SUV suv = new SUV();
         suv.startEngine();
         suv.stop();
-        suv.move(120);
+        suv.move(135);
+        suv.speeding(160);
+
+        Car car = new Car();
+        System.out.println("\n");
+        car.startEngine();
+        car.stop();
+        car.move(20);
+        car.drift();
+
+        Bicycle bicycle = new Bicycle();
+        System.out.println("\n");
+        bicycle.startEngine();
+        bicycle.stop();
+        bicycle.move(10);
+        bicycle.jump();
     }
 }

@@ -11,12 +11,12 @@ public class Bicycle implements Vehicle {
 
     @Override
     public void stop() {
-        System.out.println("Bicycle stopped");
+        System.out.println("Bicycle stopped.");
     }
 
     @Override
     public void startEngine() {
-        System.out.println("Engine starts.Let's pedal Mevo!");
+        System.out.println("Bicycle's engine starts.Let's pedal Mevo!");
     }
 
     public void jump() {
