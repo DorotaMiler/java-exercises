@@ -19,4 +19,6 @@ public interface Vehicle {
     void startEngine();
 
     void measureVelocity(int velocity);
+
+    hashCode
 }
