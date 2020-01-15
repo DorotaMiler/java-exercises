@@ -5,4 +5,9 @@ public class SUV extends Car{
     public void startEngine() {
         System.out.println("Force driver to fasten seatbelts in suv!");
     }
+
+    @Override
+    public void stop(){
+        System.out.println("Suv has stopped");
+    }
 }
