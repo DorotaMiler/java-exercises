@@ -4,6 +4,9 @@ public class Doctor extends Worker {
     private double bonus;
 
     public Doctor(String name, String lastName, double payroll) {
+
+        // super evokesa constructor from the class that we extend (Worker)
+        // CONVENTION -> uper(parametry)
         super(name, lastName, payroll);
         bonus = 0;
     }

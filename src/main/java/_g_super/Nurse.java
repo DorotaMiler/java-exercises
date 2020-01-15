@@ -3,7 +3,7 @@ package _g_super;
 public class Nurse extends Worker {
     private int overtime;
 
-    public NUrse(String name, String lastName, double payroll) {
+    public Nurse(String name, String lastName, double payroll) {
         super(name, lastName, payroll);
         overtime = 0;
     }

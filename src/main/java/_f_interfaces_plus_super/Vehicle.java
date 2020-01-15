@@ -1,4 +1,4 @@
-package _f_interfaces;
+package _f_interfaces_plus_super;
 
 /**
  * -> all METHODS are by default public and abstract (cannot be static)
@@ -10,8 +10,11 @@ package _f_interfaces;
  * inheritance)
  */
 
-public class Vehicle {
-    public void move(int velocity);
+public interface Vehicle {
 
-    public void stop();
+    void move(int velocity);
+
+    void stop();
+
+    void startEngine();
 }
