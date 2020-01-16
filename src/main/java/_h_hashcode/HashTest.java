@@ -19,6 +19,6 @@ public class HashTest {
         Path path = Paths.get("home/dorotamiler/Desktop/Dorota Miler_CV.pdf");
 
         int hashCode = path.hashCode();
-        System.out.println("Hash Code: " + hashCode);
+        System.out.println("path object's Hash Code: " + hashCode);
     }
 }
