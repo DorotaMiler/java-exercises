@@ -1,5 +1,7 @@
 package _7_if_and_switch;
 
+import java.util.Scanner;
+
 public class IfFunction {
     public static void main(String[] args) {
 
@@ -19,5 +21,15 @@ public class IfFunction {
         } else {
             System.out.println("variable is a negative number");
         }
+
+        // example of body temperatures message
+
+        Scanner scan = new Scanner(System.in);
+        int temperature = scan.nextInt();
+        if(temperature<36){
+            System.out.println();
+        }
+
+
     }
 }
