@@ -23,13 +23,18 @@ public class IfFunction {
         }
 
         // example of body temperatures message
-
+        System.out.println("\n.. now using your keyboard please indicate your body temperature: ");
         Scanner scan = new Scanner(System.in);
-        int temperature = scan.nextInt();
-        if(temperature<36){
-            System.out.println();
+        double temperature = scan.nextDouble();
+
+        if (temperature < 36.6) {
+            System.out.println("You are adynamic -> due to temperature below 36 Celsius.");
+        } else if (temperature < 37) {
+            System.out.println("You have slightly raised temperature -> due to temperature between 36.6 - 37.0 Celsius.)");
+        } else if (temperature < 38) {
+            System.out.println("You have a fever -> due to temperature between 37.0 - 38.0 Celsius");
+        } else {
+            System.out.println("You have at least 38 Celsius fever if not more! -> take a medicine and see a doctor!");
         }
-
-
     }
 }
