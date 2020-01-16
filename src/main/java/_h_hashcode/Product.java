@@ -1,5 +1,7 @@
 package _h_hashcode;
 
+import java.util.Objects;
+
 public class Product {
     private String name;
     private double price;
@@ -23,5 +25,19 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product)) return false;
+        Product product = (Product) o;
+        return Double.compare(product.getPrice(), getPrice()) == 0 &&
+                Objects.equals(getName(), product.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getPrice());
     }
 }
