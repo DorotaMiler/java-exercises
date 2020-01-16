@@ -36,6 +36,7 @@ public class Product {
                 Objects.equals(getName(), product.getName());
     }
 
+    // this method utilized in data structures based on hashtables f.ex. HashSet or HashMap
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getPrice());
