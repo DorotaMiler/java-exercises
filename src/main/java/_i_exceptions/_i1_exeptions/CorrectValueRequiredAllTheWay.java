@@ -19,7 +19,7 @@ public class CorrectValueRequiredAllTheWay {
             } catch (IOException e) {
                 System.out.println("Error! - data read-out issue");
             }
-            
+
 
 
 //        int[] table = {1, 2, 3, 4, 5};
