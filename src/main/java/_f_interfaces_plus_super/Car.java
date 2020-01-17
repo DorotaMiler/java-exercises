@@ -3,6 +3,24 @@ package _f_interfaces_plus_super;
 public class Car implements Vehicle {
 
     int velocity;
+    protected int tankCapacity = 60;
+    // @ the beginnign of a ride:
+    protected int fuelLevel = tankCapacity;
+
+    public void fillTank() {
+        int toFill = tankCapacity - fuelLevel;
+        fillTank(toFill);
+    }
+
+    public void fillTank(int toFill) {
+        if (toFill + fuelLevel > tankCapacity) {
+            System.out.println("Tank capacity exceeded -> please rethink " + toFill + " litres fuel's amount");
+        } else {
+            toFill + fuelLevel =<tankCapacity {
+                "Tank has been successfully filled with " + toFill + " litres of fuel");
+            }
+        }
+    }
 
     @Override
     public void move(int velocity) {

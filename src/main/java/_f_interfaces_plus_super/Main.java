@@ -16,6 +16,7 @@ public class Main {
         car.move(20);
         car.drift();
         car.measureVelocity(40);
+        car.fillTank(20);
 
         Bicycle bicycle = new Bicycle();
         System.out.println("\n");
