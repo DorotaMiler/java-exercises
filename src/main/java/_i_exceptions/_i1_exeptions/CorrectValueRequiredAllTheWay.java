@@ -15,7 +15,7 @@ public class CorrectValueRequiredAllTheWay {
             try {
                 index = Integer.parseInt(reader.readLine());
             } catch (NumberFormatException n) {
-                System.out.println("Not correct format of data :(" + "\nReenter table's index you want to invoke: )";
+                System.out.println("Not correct format of data :(" + "\nReenter table's index you want to invoke: ");
             } catch (IOException e) {
                 System.out.println("Error! - data read-out issue");
             }
@@ -25,7 +25,7 @@ public class CorrectValueRequiredAllTheWay {
         try {
             System.out.println(table[index - 1]);
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Given index not accurate (out of bound). Table's length is: " + table.lenght);
+            System.out.println("Given index not accurate (out of bound). Table's length is: " + table.length);
         }
     }
 }

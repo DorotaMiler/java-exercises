@@ -16,11 +16,11 @@ public class Car implements Vehicle {
         if (toFill + fuelLevel > tankCapacity) {
             System.out.println("Tank capacity exceeded -> please rethink " + toFill + " litres fuel's amount");
         } else {
-            toFill + fuelLevel =<tankCapacity {
-                "Tank has been successfully filled with " + toFill + " litres of fuel");
+            fuelLevel += toFill;
+            System.out.println("Tank has been successfully filled with " + toFill + " litres of fuel");
             }
         }
-    }
+
 
     @Override
     public void move(int velocity) {
