@@ -18,7 +18,8 @@ public class FileManager {
             System.out.println(e.getMessage());
             // test.txt (No such file or directory)
             System.out.println(e.getLocalizedMessage());
-            // pile of branch control structure (run for review :))
+            // pile
+            // of branch control structure (run for review :))
             e.printStackTrace();
         }
     }
