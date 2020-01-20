@@ -9,11 +9,11 @@ import java.util.Scanner;
 public class FileManagerWriterCopy {
     public static void main(String[] args) {
 
-        try {
-            run();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            run();
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
 
         try {
             display();
@@ -22,13 +22,13 @@ public class FileManagerWriterCopy {
         }
     }
 
-    private static void run() throws IOException {
-        File file = new File("test.txt");
-
-        FileWriter writer = new FileWriter(file);
-        writer.write("This is just a test");
-        writer.close();
-    }
+//    private static void run() throws IOException {
+//        File file = new File("test.txt");
+//
+//        FileWriter writer = new FileWriter(file);
+//        writer.write("This is just a test");
+//        writer.close();
+//    }
 
     private static void display() throws FileDoesNotExistException {
         File file = new File("test.txt");
@@ -37,11 +37,11 @@ public class FileManagerWriterCopy {
             try {
                 scan = new Scanner(file);
             } catch (FileNotFoundException e) {
-                throw new FileDoesNotExistException();
+                throw new FileDoesNotExistException("File does not exist");
             }
             System.out.println(scan.nextLine());
         } else {
-            throw new FileDoesNotExistException();
+            throw new FileDoesNotExistException("File does not exist");
         }
     }
 }
