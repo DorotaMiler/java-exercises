@@ -1,4 +1,4 @@
-package _i_exceptions._i3_exeptions_must_be_handled;
+package _i_exceptions._i3_exceptions_must_be_handled;
 
 import java.io.File;
 import java.io.FileNotFoundException;

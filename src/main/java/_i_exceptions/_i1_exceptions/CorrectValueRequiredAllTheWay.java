@@ -1,4 +1,4 @@
-package _i_exceptions._i1_exeptions;
+package _i_exceptions._i1_exceptions;
 
 import java.io.BufferedReader;
 import java.io.IOException;
