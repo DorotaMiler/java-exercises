@@ -35,6 +35,8 @@ public class FileManagerWriter {
         if (file.exists()) {
             Scanner scan = new Scanner(file);
             System.out.println(scan.nextLine());
+        } else {
+            System.out.println("Sorry." + "\nThe file does not exist.");
         }
     }
 }
