@@ -1,10 +1,10 @@
-package _i_exceptions;
+package _i_exceptions._i2_throw;
 
-public class SimleArithmeticEx {
+public class SimpleArithmeticEx {
     public static void main(String[] args) {
 
         try {
-            System.out.println(devide(10, 5));
+            System.out.println(devide(10, 0));
         } catch (ArithmeticException e) {
             System.out.println("Not possible to devide by 0.");
         }
