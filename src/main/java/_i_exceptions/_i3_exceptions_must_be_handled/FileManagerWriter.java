@@ -3,6 +3,7 @@ package _i_exceptions._i3_exceptions_must_be_handled;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileManagerWriter {
     public static void main(String[] args) {
@@ -13,6 +14,12 @@ public class FileManagerWriter {
                 IOException e) {
             e.printStackTrace();
         }
+
+        try {
+            display();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void run() throws IOException {
@@ -21,5 +28,13 @@ public class FileManagerWriter {
         FileWriter writer = new FileWriter(file);
         writer.write("This is just a test");
         writer.close();
+    }
+
+    private static void display() throws IOException {
+        File file = new File("test.txt");
+        if (file.exists()) {
+            Scanner scan = new Scanner(file);
+            System.out.println(scan.nextLine());
+        }
     }
 }
