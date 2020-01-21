@@ -1,4 +1,4 @@
-package _i_exceptions;
+package _i_exceptions._i1_try_catch._i11_try_catch;
 
 public class HourToSeconds {
     public int getNumberOfSeconds(int hour) {

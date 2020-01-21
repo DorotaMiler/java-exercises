@@ -1,4 +1,6 @@
-package _i_exceptions;
+package _i_exceptions._i1_try_catch._i11_try_catch;
+
+import _i_exceptions._i1_try_catch._i11_try_catch.HourToSeconds;
 
 import java.util.Scanner;
 

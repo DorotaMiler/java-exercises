@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class FileManagerWriter {
+public class FileManagerScanAndWriter {
     public static void main(String[] args) {
 
         try {

@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class FileManager {
+public class ExceptionsHandlingMessages {
     public static void main(String[] args) {
 
         File file = new File("test.txt");
