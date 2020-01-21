@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class FilesContentsDisplay {
     public static void main(String[] args) {
-        try{
+        try {
             display();
-        } catch (FileDoesNotExistException e){
+        } catch (FileDoesNotExistException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -23,8 +23,6 @@ public class FilesContentsDisplay {
                 scan = new Scanner(file);
             } catch (FileNotFoundException e) {
                 throw new FileDoesNotExistException("File not there.");
-            } catch (IOException e) {
-                System.out.println("Data entry error.");
             }
             System.out.println(scan.nextLine());
         } else {
