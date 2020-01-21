@@ -1,7 +1,5 @@
 package _i_exceptions._i1_try_catch._i11_try_catch;
 
-import _i_exceptions._i1_try_catch._i11_try_catch.HourToSeconds;
-
 import java.util.Scanner;
 
 public class Main {
@@ -30,5 +28,16 @@ public class Main {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("The given index is incorrect, please verify (array's length is: " + table.length + " elements.");
         }
+        int hours = -4;
+        int numberOfSeconds = 0;
+
+        HourToSeconds instance = new HourToSeconds();
+        try {
+            numberOfSeconds = instance.getNumberOfSeconds(hours);
+        } catch (IllegalArgumentException e) {
+            numberOfSeconds = instance.getNumberOfSeconds(hours * -1);
+
+        }
+        System.out.println(numberOfSeconds);
     }
 }
