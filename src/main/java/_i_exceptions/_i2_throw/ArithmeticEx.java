@@ -1,12 +1,12 @@
 package _i_exceptions._i2_throw;
 
-public class SimpleArithmeticEx {
+public class ArithmeticEx {
     public static void main(String[] args) {
 
         try {
-            System.out.println(devide(10, 0));
+            System.out.println("Equation result: "+devide(10, 0));
         } catch (ArithmeticException e) {
-            System.out.println("Not possible to devide by 0.");
+            System.out.println("Not possible to divide by 0.");
         }
     }
 
