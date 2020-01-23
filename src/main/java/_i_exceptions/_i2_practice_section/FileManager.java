@@ -1,6 +1,10 @@
 package _i_exceptions._i2_practice_section;
 
+import com.sun.tools.jdeprscan.scan.Scan;
+
 import java.io.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class FileManager {
     public static void main(String[] args) {
@@ -11,6 +15,11 @@ public class FileManager {
             System.out.println(e.getMessage());
         }
 
+        try {
+            display();
+        } catch (FileDoesNotExistException e) {
+            System.out.println(Arrays.toString(e.getStackTrace()));
+        }
     }
 
 
@@ -25,4 +34,20 @@ public class FileManager {
             }
         }
     }
+
+    private static void display() throws FileDoesNotExistException {
+        File file = new File("practice.txt");
+        if (file.exists()) {
+            Scanner scan = null;
+            try {
+                scan = new Scanner(file);
+            } catch (FileNotFoundException e) {
+                throw new FileDoesNotExistException("Cannot scan text from file because file does not exist.");
+            }
+            System.out.println("SUCCESS: File's contents are: " + scan.nextLine());
+        } else {
+            throw new FileDoesNotExistException("Unfortunately file does not exist");
+        }
+    }
+
 }
