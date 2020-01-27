@@ -5,6 +5,7 @@ public class Car extends Vehicle {
     private String name;
     private int maxSpeed;
     private Engine engine;
+    private Colour colour;
 
     public Car() {
         name = "default";
