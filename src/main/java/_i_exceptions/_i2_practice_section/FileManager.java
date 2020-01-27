@@ -1,7 +1,5 @@
 package _i_exceptions._i2_practice_section;
 
-import com.sun.tools.jdeprscan.scan.Scan;
-
 import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -21,7 +19,6 @@ public class FileManager {
             System.out.println(Arrays.toString(e.getStackTrace()));
         }
     }
-
 
     private static void writeToFile() throws InternetConnectionException, IOException {
         File file = new File("practice.txt");
@@ -49,5 +46,4 @@ public class FileManager {
             throw new FileDoesNotExistException("Unfortunately file does not exist");
         }
     }
-
 }
