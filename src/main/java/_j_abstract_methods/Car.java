@@ -1,5 +1,7 @@
 package _j_abstract_methods;
 
+import java.util.Objects;
+
 public class Car extends Vehicle {
     private static final int NUMBER_OF_WHEELS = 4;
     private String name;
@@ -11,6 +13,7 @@ public class Car extends Vehicle {
         name = "default";
         maxSpeed = 100;
         engine = new Engine();
+        colour = Colour.WHITE;
     }
 
     public void printName() {
@@ -51,5 +54,22 @@ public class Car extends Vehicle {
 
     public void setEngine(Engine engine) {
         this.engine = engine;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+        Car car = (Car) o;
+        return getMaxSpeed() == car.getMaxSpeed() &&
+                Objects.equals(getName(), car.getName()) &&
+                Objects.equals(getEngine(), car.getEngine()) &&
+                colour == car.colour;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getMaxSpeed(), getEngine(), colour);
     }
 }
