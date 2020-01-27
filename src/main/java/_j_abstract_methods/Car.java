@@ -56,7 +56,6 @@ public class Car extends Vehicle {
         this.engine = engine;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -71,5 +70,15 @@ public class Car extends Vehicle {
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getMaxSpeed(), getEngine(), colour);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", engine=" + engine +
+                ", colour=" + colour +
+                '}';
     }
 }
