@@ -5,20 +5,28 @@ public class Engine {
     private Integer power;
     private Integer capacity;
 
-    private String inline = "Inline";
-    private String vr = "VR";
-    private String boxer = "Boxer";
+    private String name;
 
-    public String getBoxer() {
-        return boxer;
+    private String name1 = "Inline";
+    private String name2 = "VR";
+    private String name3 = "Boxer";
+
+    public Engine(){
+        name = "default";
+        power = 100;
+        capacity = 200;
     }
 
-    public String getInline() {
-        return inline;
+    public String getName1() {
+        return name1;
     }
 
-    public String getVr() {
-        return vr;
+    public String getName2() {
+        return name2;
+    }
+
+    public String getName3() {
+        return name3;
     }
 
     public Integer getCapacity() {
