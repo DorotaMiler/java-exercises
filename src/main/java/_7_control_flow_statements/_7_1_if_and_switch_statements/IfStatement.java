@@ -1,8 +1,17 @@
-package _7_if_and_switch;
+package _7_control_flow_statements._7_1_if_and_switch_statements;
 
 import java.util.Scanner;
 
-public class IfFunction {
+/**
+ * 1.  The if-then statement is the most basic of all the control flow statements.
+ * It tells your program to execute a certain
+ * section of code only if a particular test evaluates to true.
+ *
+ * 2.  The if-then-else statement provides a secondary path of execution when
+ * an "if" clause evaluates to false.
+ */
+
+public class IfStatement {
     public static void main(String[] args) {
 
         // first example

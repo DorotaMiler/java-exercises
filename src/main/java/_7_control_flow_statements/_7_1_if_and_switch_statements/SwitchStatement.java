@@ -1,8 +1,13 @@
-package _7_if_and_switch;
+package _7_control_flow_statements._7_1_if_and_switch_statements;
 
 import java.util.Scanner;
 
-public class Switch {
+/**
+ * Unlike if-then and if-then-else, the switch statement allows
+ * for any number of possible execution paths.
+ */
+
+public class SwitchStatement {
     public static void main(String[] args) {
         System.out.println("-------MENU-------");
         System.out.println("    1: Options ---");

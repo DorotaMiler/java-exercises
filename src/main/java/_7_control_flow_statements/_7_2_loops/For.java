@@ -1,4 +1,10 @@
-package _9_loops;
+package _7_control_flow_statements._7_2_loops;
+
+/**
+ * The for statement provides a compact way to iterate
+ * over a range of values. It has two forms, one of which
+ * was designed for looping through collections and arrays.
+ */
 
 public class For {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package _9_loops;
+package _7_control_flow_statements._7_2_loops;
 
 import java.util.Arrays;
 import java.util.List;

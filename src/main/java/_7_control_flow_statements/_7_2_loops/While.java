@@ -1,4 +1,9 @@
-package _9_loops;
+package _7_control_flow_statements._7_2_loops;
+
+/*
+The while statement continually executes a block of statements while a
+particular condition is true. Its syntax can be expressed as:
+ */
 
 public class While {
     public static void main(String[] args) {
