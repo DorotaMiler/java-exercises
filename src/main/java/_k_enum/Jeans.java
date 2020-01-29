@@ -24,4 +24,12 @@ public class Jeans {
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
+
+    @Override
+    public String toString() {
+        return "Jeans{" +
+                "size=" + size +
+                ", manufacturer='" + manufacturer + '\'' +
+                '}';
+    }
 }

@@ -1,5 +1,6 @@
 package _j_abstract_methods;
 
+import java.util.Date;
 import java.util.Objects;
 
 public class Car extends Vehicle {
@@ -54,6 +55,15 @@ public class Car extends Vehicle {
 
     public void setEngine(Engine engine) {
         this.engine = engine;
+    }
+
+    public Colour getColour() {
+        return colour;
+    }
+
+    @Override
+    public Date getProducionDate() {
+        return super.getProducionDate();
     }
 
     @Override
