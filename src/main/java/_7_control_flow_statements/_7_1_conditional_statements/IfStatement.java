@@ -1,4 +1,4 @@
-package _7_control_flow_statements._7_1_if_and_switch_statements;
+package _7_control_flow_statements._7_1_conditional_statements;
 
 import java.util.Scanner;
 
