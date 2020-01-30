@@ -17,6 +17,11 @@ public class Engine {
         capacity = 200;
     }
 
+    public Engine(Integer power, Integer capacity){
+        this.power = power;
+        this.capacity = capacity;
+    }
+
     public String getName1() {
         return name1;
     }

@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Car extends Vehicle {
     private static final int NUMBER_OF_WHEELS = 4;
     private String name;
-    private int maxSpeed;
+    private Integer maxSpeed;
     private Engine engine;
     private Colour colour;
 
@@ -15,6 +15,13 @@ public class Car extends Vehicle {
         maxSpeed = 100;
         engine = new Engine();
         colour = Colour.WHITE;
+    }
+
+    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
+        this.engine = engine;
+        this.colour = colour;
     }
 
     public void printName() {
