@@ -6,7 +6,7 @@ public class Engine {
 
     private Integer power;
     private Integer capacity;
-    private String name
+    private String name;
 
     public Engine(){
         name = "default";

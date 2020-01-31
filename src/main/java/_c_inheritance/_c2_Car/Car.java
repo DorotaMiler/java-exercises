@@ -4,11 +4,11 @@ public class Car {
     private Engine engine;
     private String name;
 
-//    2nd concept:
-//    public Car(String name, Engine engine) {
-//        this.name = name;
-//        this.engine = engine;
-//    }
+    //    2nd concept:
+    public Car(String name, Engine engine) {
+        this.name = name;
+        this.engine = engine;
+    }
 
     // 1st concept:
     public String getName() {
