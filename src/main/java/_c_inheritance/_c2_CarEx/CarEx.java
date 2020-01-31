@@ -1,11 +1,11 @@
-package _c_inheritance._c2_Car;
+package _c_inheritance._c2_CarEx;
 
-public class Car {
+public class CarEx {
     private Engine engine;
     private String name;
 
     //    2nd concept:
-    public Car(String name, Engine engine) {
+    public CarEx(String name, Engine engine) {
         this.name = name;
         this.engine = engine;
     }

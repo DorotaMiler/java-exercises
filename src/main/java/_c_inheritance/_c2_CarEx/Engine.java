@@ -1,4 +1,4 @@
-package _c_inheritance._c2_Car;
+package _c_inheritance._c2_CarEx;
 
 public class Engine {
     private Integer power;

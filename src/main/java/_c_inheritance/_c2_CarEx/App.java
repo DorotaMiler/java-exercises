@@ -1,11 +1,10 @@
-package _c_inheritance._c2_Car;
+package _c_inheritance._c2_CarEx;
 
 public class App {
     public static void main(String[] args) {
-
         // 1st concept:
-//        Car car1 = new Car();
-//        Car car2 = new Car();
+//        CarEx car1 = new CarEx();
+//        CarEx car2 = new CarEx();
 //
 //        car1.setName("Toyota");
 //        car1.setEngine(new Engine(100,200));
@@ -17,10 +16,10 @@ public class App {
 
 
         // 2nd concept (saves space):
-        Car car1 = new Car("Toyota", new Engine(400, 270));
+        CarEx car1 = new CarEx("Toyota", new Engine(400, 270));
         System.out.println("Thanks to constructors, first car's features are: " + "\nName: " + car1.getName() + "\n capacity: " + car1.getEngine().getCapacity() + "\n power: " + car1.getEngine().getPower());
 
-        Car car2 = new Car("Opel", new Engine(500, 230));
-        System.out.println("Again, thnks to constructors, first car's features are: " + "\nName: " + car2.getName() + "\n capacity: " + car2.getEngine().getCapacity() + "\n power: " + car2.getEngine().getPower());
+        CarEx car2 = new CarEx("Opel", new Engine(500, 230));
+        System.out.println("Again, thanks to constructors, first car's features are: " + "\nName: " + car2.getName() + "\n capacity: " + car2.getEngine().getCapacity() + "\n power: " + car2.getEngine().getPower());
     }
 }
