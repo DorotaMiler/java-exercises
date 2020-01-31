@@ -1,16 +1,15 @@
-package _c_inheritance._c2_CarEx;
+package dm.vehicle;
 
 public class Engine {
     private Integer power;
     private Integer capacity;
 
-
-    public Engine(){
+    public Engine() {
         power = 10;
         capacity = 10;
     }
 
-    public Engine(Integer power, Integer capacity){
+    public Engine(Integer power, Integer capacity) {
         this.power = power;
         this.capacity = capacity;
     }
