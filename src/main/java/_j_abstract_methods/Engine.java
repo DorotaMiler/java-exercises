@@ -6,10 +6,7 @@ public class Engine {
 
     private Integer power;
     private Integer capacity;
-    private String name;
-    private String name1 = "Inline";
-    private String name2 = "VR";
-    private String name3 = "Boxer";
+    private String name
 
     public Engine(){
         name = "default";

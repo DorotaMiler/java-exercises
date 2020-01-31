@@ -16,7 +16,7 @@ public class Car extends Vehicle {
     public Car() {
         name = "default";
         maxSpeed = 100;
-        engine = new Engine();
+        engine = new Engine(1,1);
         colour = Colour.WHITE;
     }
 
