@@ -4,11 +4,14 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Car extends Vehicle {
-    private static final int NUMBER_OF_WHEELS = 4;
+
     private String name;
-    private Integer maxSpeed;
+    private int maxSpeed;
     private Engine engine;
     private Colour colour;
+
+    public Car(){
+    }
 
     public Car() {
         name = "default";
@@ -17,12 +20,19 @@ public class Car extends Vehicle {
         colour = Colour.WHITE;
     }
 
-    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
+    public Car(String name, int maxSpeed, Engine engine, Colour colour){
         this.name = name;
         this.maxSpeed = maxSpeed;
         this.engine = engine;
         this.colour = colour;
     }
+
+//    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
+//        this.name = name;
+//        this.maxSpeed = maxSpeed;
+//        this.engine = engine;
+//        this.colour = colour;
+//    }
 
     public void printName() {
         String intro = "The car's name is: ";
@@ -30,9 +40,9 @@ public class Car extends Vehicle {
         System.out.println(name);
     }
 
-    public Car(Engine engine) {
-        super(engine, NUMBER_OF_WHEELS);
-    }
+//    public Car(Engine engine) {
+//        super(engine, NUMBER_OF_WHEELS);
+//    }
 
     @Override
     public static int getNumberOfWheels() {

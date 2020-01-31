@@ -2,9 +2,9 @@ package _j_abstract_methods;
 
 import java.util.Date;
 
-public abstract class Vehicle {
+public class Vehicle {
 
-    private int numberOfWheels;
+    private static final int NUMBER_OF_WHEELS = 4;
     private Engine engine;
     private Date producionDate;
 
