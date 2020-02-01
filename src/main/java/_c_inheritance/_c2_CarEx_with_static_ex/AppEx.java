@@ -49,6 +49,14 @@ public class AppEx {
         engine5.setPower(60);
         engine5.setCapacity(600);
         car5.setEngine(engine5);
-        System.out.println("Fifth car's features: " + "\n name: " + car5.getName() + "\n power: " + car5.getEngine().getPower() + "\n capacity: " + car5.getEngine().getCapacity());
+        car5.setMileage(1345);
+        System.out.println("Fifth car's features: " + "\n name: " + car5.getName() + "\n power: " + car5.getEngine().getPower() + "\n capacity: " + car5.getEngine().getCapacity() + "\n mileage: " + car5.getMileage());
+
+// 1st approach -> comparison of int & Integer:
+        boolean comparison = car1.getVariableInt() == car1.getVariavleInteger();
+        System.out.println("Comparison of int & Integer methods: " + comparison);
+        // 2nd approach -> comparison of int & Integer:
+
+
     }
 }
