@@ -53,10 +53,12 @@ public class AppEx {
         System.out.println("Fifth car's features: " + "\n name: " + car5.getName() + "\n power: " + car5.getEngine().getPower() + "\n capacity: " + car5.getEngine().getCapacity() + "\n mileage: " + car5.getMileage());
 
 // 1st approach -> comparison of int & Integer:
-        boolean comparison = car1.getVariableInt() == car1.getVariavleInteger();
-        System.out.println("Comparison of int & Integer methods: " + comparison);
+        boolean comparison1 = car1.getVariableInt() == car1.getVariavleInteger();
+        System.out.println("Comparison of int & Integer methods: " + comparison1);
+        //true
+
         // 2nd approach -> comparison of int & Integer:
-
-
+        System.out.println(Integer.compare(car1.getVariableInt(), car1.getVariavleInteger()));
+        // println "0" -> therefore true
     }
 }

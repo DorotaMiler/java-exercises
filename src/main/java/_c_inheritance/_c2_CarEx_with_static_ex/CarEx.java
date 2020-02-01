@@ -7,8 +7,11 @@ public class CarEx {
 
     private EngineEx engine;
     private String name;
+    private Integer variavleInteger = 4;
+    private int variableInt = 4;
+    private int mileage;
 
-    public CarEx(){
+    public CarEx() {
     }
 
     public CarEx(String name) {
@@ -52,5 +55,21 @@ public class CarEx {
 
     public void setEngine(EngineEx engine) {
         this.engine = engine;
+    }
+
+    public int getVariableInt() {
+        return variableInt;
+    }
+
+    public Integer getVariavleInteger() {
+        return variavleInteger;
+    }
+
+    public Integer getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(Integer mileage) {
+        this.mileage = mileage;
     }
 }
