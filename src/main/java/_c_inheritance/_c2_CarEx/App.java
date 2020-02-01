@@ -1,6 +1,6 @@
 package dm.vehicle;
 
-import _c_inheritance._c2_CarEx.CarEx;
+import _c_inheritance._c2_CarEx.StaticExample;
 
 public class App {
     public static void main(String[] args) {
@@ -17,10 +17,10 @@ public class App {
 //        System.out.println("Second car's features: "+car2.getName()+", engine: capacity -> "+ car2.getEngine().getCapacity()+", power: "+car2.getEngine().getPower());
 
         // 2nd concept (saves space):
-        CarEx car1 = new CarEx("Toyota", new Engine(400, 270));
+        dm.vehicle.CarEx car1 = new dm.vehicle.CarEx("Toyota", new dm.vehicle.Engine(400, 270));
         System.out.println("Thanks to constructors, first car's features are: " + "\nName: " + car1.getName() + "\n capacity: " + car1.getEngine().getCapacity() + "\n power: " + car1.getEngine().getPower());
 
-        CarEx car2 = new CarEx("Opel", new Engine(500, 230));
+        dm.vehicle.CarEx car2 = new dm.vehicle.CarEx("Opel", new dm.vehicle.Engine(500, 230));
         System.out.println("Again, thanks to constructors, second car's features are: " + "\nName: " + car2.getName() + "\n capacity: " + car2.getEngine().getCapacity() + "\n power: " + car2.getEngine().getPower());
 
         // 1st approach:
@@ -30,6 +30,11 @@ public class App {
 
 //        3rd approach:
 //        car1.printCarName();
-        CarEx.printCarName("Mazda");
+        dm.vehicle.CarEx.printCarName("Mazda");
+        System.out.println("\n");
+        StaticExample.staticMethdd();
+
+        StaticExample staticExample = new StaticExample();
+        staticExample.nonStaticMethod();
     }
 }
