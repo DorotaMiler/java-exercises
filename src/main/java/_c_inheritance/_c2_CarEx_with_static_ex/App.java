@@ -1,6 +1,6 @@
 package dm.vehicle;
 
-import _c_inheritance._c2_CarEx.StaticExample;
+import _c_inheritance._c2_CarEx_with_static_ex.StaticExample;
 
 public class App {
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class App {
 //        car1.printCarName();
         dm.vehicle.CarEx.printCarName("Mazda");
         System.out.println("\n");
-        StaticExample.staticMethdd();
+        StaticExample.staticMethod();
 
         StaticExample staticExample = new StaticExample();
         staticExample.nonStaticMethod();

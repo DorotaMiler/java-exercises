@@ -1,8 +1,8 @@
-package _c_inheritance._c2_CarEx;
+package _c_inheritance._c2_CarEx_with_static_ex;
 
 public class StaticExample {
 
-    public static void staticMethdd(){
+    public static void staticMethod(){
         System.out.println("This is a static method.");
     }
 
