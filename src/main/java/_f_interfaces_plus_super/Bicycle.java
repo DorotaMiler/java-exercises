@@ -14,7 +14,7 @@ public class Bicycle extends Car {
     }
 
     @Override
-    public void startEngine() {
+    public void startEngineEx() {
         System.out.println("Bicycle's engine starts.Let's pedal Mevo!");
     }
 

@@ -1,16 +1,22 @@
-package dm.vehicle;
+package _c_inheritance._c2_CarEx_with_static_ex;
+
+
+import _j_abstract_methods.Engine;
 
 public class CarEx {
-    private Engine engine;
+
+    private EngineEx engine;
     private String name;
 
+    public CarEx(){
+    }
 
     public CarEx(String name) {
         this.name = name;
     }
 
     //    2nd concept:
-    public CarEx(String name, Engine engine) {
+    public CarEx(String name, EngineEx engine) {
         this.name = name;
         this.engine = engine;
     }
@@ -31,7 +37,6 @@ public class CarEx {
         System.out.println(car.getName());
     }
 
-
     // 1st concept:
     public String getName() {
         return name;
@@ -41,11 +46,11 @@ public class CarEx {
         this.name = name;
     }
 
-    public Engine getEngine() {
+    public EngineEx getEngine() {
         return engine;
     }
 
-    public void setEngine(Engine engine) {
+    public void setEngine(EngineEx engine) {
         this.engine = engine;
     }
 }

@@ -1,15 +1,17 @@
-package dm.vehicle;
+package _c_inheritance._c2_CarEx_with_static_ex;
 
-public class Engine {
+public class EngineEx {
+    private String engineName;
     private Integer power;
     private Integer capacity;
 
-    public Engine() {
+    public EngineEx() {
+        engineName = "default";
         power = 10;
         capacity = 10;
     }
 
-    public Engine(Integer power, Integer capacity) {
+    public EngineEx(Integer power, Integer capacity) {
         this.power = power;
         this.capacity = capacity;
     }
