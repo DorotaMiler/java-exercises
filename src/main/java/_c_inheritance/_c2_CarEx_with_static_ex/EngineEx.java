@@ -1,7 +1,7 @@
 package _c_inheritance._c2_CarEx_with_static_ex;
 
 public class EngineEx {
-    private String engineName;
+    public String engineName;
     private Integer power;
     private Integer capacity;
 

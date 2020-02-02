@@ -14,6 +14,11 @@ public class AppEx {
 //        car2.setEngine(new EngineEx(120,250));
 //        System.out.println("Second car's features: "+car2.getName()+", engine: capacity -> "+ car2.getEngine().getCapacity()+", power: "+car2.getEngine().getPower());
 
+
+        // default execution:
+        CarEx car = new CarEx(new EngineEx());
+        System.out.println("Default engine info: default name-> " + car.getEngine().engineName + ", capcity-> " + car.getEngine().getCapacity() + ", power-> " + car.getEngine().getPower());
+
         // 2nd concept (saves space):
         CarEx car1 = new CarEx("Toyota", new EngineEx(400, 270));
         System.out.println("Thanks to constructors, first car's features are: " + "\nName: " + car1.getName() + "\n capacity: " + car1.getEngine().getCapacity() + "\n power: " + car1.getEngine().getPower());

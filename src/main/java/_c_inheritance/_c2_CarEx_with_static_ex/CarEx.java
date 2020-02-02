@@ -1,8 +1,5 @@
 package _c_inheritance._c2_CarEx_with_static_ex;
 
-
-import _j_abstract_methods.Engine;
-
 public class CarEx {
 
     private EngineEx engine;
@@ -16,6 +13,10 @@ public class CarEx {
 
     public CarEx(String name) {
         this.name = name;
+    }
+
+    public CarEx(EngineEx engine){
+        this.engine = engine;
     }
 
     //    2nd concept:
