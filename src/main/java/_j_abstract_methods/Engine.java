@@ -8,27 +8,15 @@ public class Engine {
     private Integer capacity;
     private String name;
 
-    public Engine(){
+    public Engine() {
         name = "default";
         power = 100;
         capacity = 200;
     }
 
-    public Engine(Integer power, Integer capacity){
+    public Engine(Integer power, Integer capacity) {
         this.power = power;
         this.capacity = capacity;
-    }
-
-    public String getName1() {
-        return name1;
-    }
-
-    public String getName2() {
-        return name2;
-    }
-
-    public String getName3() {
-        return name3;
     }
 
     public Integer getCapacity() {
@@ -54,15 +42,12 @@ public class Engine {
         Engine engine = (Engine) o;
         return Objects.equals(getPower(), engine.getPower()) &&
                 Objects.equals(getCapacity(), engine.getCapacity()) &&
-                Objects.equals(name, engine.name) &&
-                Objects.equals(getName1(), engine.getName1()) &&
-                Objects.equals(getName2(), engine.getName2()) &&
-                Objects.equals(getName3(), engine.getName3());
+                Objects.equals(name, engine.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPower(), getCapacity(), name, getName1(), getName2(), getName3());
+        return Objects.hash(getPower(), getCapacity(), name);
     }
 
     @Override
@@ -71,9 +56,6 @@ public class Engine {
                 "power=" + power +
                 ", capacity=" + capacity +
                 ", name='" + name + '\'' +
-                ", name1='" + name1 + '\'' +
-                ", name2='" + name2 + '\'' +
-                ", name3='" + name3 + '\'' +
                 '}';
     }
 }
