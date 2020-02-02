@@ -1,4 +1,4 @@
-package _4_math_and_logic_operators;
+package _3_variables.casting;
 
 public class CalculatorEx {
     public static void main(String[] args) {
