@@ -1,6 +1,6 @@
-package _5_math_functions_BigInteger_BigDecimal;
+package _4_math_and_logic_operators;
 
-public class NormalNumbers {
+public class AssignmentOperator {
     public static void main(String[] args) {
         double a = 9.5;
         double b = 4;
