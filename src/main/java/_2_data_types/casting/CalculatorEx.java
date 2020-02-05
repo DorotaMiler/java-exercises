@@ -1,4 +1,4 @@
-package _3_variables.casting;
+package _2_data_types.casting;
 
 public class CalculatorEx {
     public static void main(String[] args) {

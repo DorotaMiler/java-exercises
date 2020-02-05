@@ -7,9 +7,9 @@ public class Variables {
         /* most common to concatenate both in one row:
         int age = 19;
          */
-        System.out.println("Mam " + age + " lat");
-        System.out.println(age + " lat to piekny wiek..");
-        System.out.println("Dodatkowo " + age + " to liczba pierwsza");
-        System.out.println("Liczba, ktora nastepuje po " + age + " to: " + (age + 1));
+        System.out.println("I am  " + age + " years old.");
+        System.out.println(age + " is a beautiful number.");
+        System.out.println("Additionally " + age + " is a prime number");
+        System.out.println("A number, that follows " + age + " is: " + (age + 1));
     }
 }

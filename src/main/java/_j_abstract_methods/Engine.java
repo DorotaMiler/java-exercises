@@ -2,7 +2,7 @@ package _j_abstract_methods;
 
 import java.util.Objects;
 
-public class Engine {
+class Engine {
 
     private Integer power;
     private Integer capacity;
