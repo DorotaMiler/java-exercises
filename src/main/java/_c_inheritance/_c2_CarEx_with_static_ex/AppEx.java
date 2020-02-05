@@ -71,5 +71,9 @@ public class AppEx {
         CarEx.compareMaxSpeed(car6, car7);
 
         CarEx.renameFasterCar(car6, car7);
+
+        // getName() of both objects
+        System.out.println(car6.getName());
+        System.out.println(car7.getName());
     }
 }
