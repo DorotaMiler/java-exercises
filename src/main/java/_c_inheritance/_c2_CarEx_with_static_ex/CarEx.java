@@ -4,6 +4,7 @@ public class CarEx {
 
     private EngineEx engine;
     private String name;
+    private Integer maxSpeed;
     private Integer variavleInteger = 4;
     private int variableInt = 4;
     private int mileage;
@@ -23,6 +24,11 @@ public class CarEx {
     public CarEx(String name, EngineEx engine) {
         this.name = name;
         this.engine = engine;
+    }
+
+    public CarEx(String name, Integer maxSpeed) {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
     }
 
 //    1st approach:
@@ -72,5 +78,21 @@ public class CarEx {
 
     public void setMileage(Integer mileage) {
         this.mileage = mileage;
+    }
+
+    public Integer getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(Integer maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public static void compareMaxSpeed(CarEx car1, CarEx car2) {
+        if (car1.getMaxSpeed() > car2.getMaxSpeed()) {
+            System.out.println(car1.getName());
+        } else {
+            System.out.println(car2.getName());
+        }
     }
 }

@@ -65,5 +65,11 @@ public class AppEx {
         // 2nd approach -> comparison of int & Integer:
         System.out.println(Integer.compare(car1.getVariableInt(), car1.getVariavleInteger()));
         // println "0" -> therefore true
+
+        CarEx car6 = new CarEx("car6",100);
+        CarEx car7 = new CarEx("car7",200);
+        CarEx.compareMaxSpeed(car6,car7);
+
+
     }
 }
