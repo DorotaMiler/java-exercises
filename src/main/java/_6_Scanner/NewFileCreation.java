@@ -1,4 +1,4 @@
-package _8_Scanner;
+package _6_Scanner;
 
 import java.io.File;
 import java.io.IOException;

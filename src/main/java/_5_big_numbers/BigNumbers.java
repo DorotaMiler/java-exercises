@@ -1,4 +1,4 @@
-package _5_math_functions_BigInteger_BigDecimal;
+package _5_big_numbers;
 
 /*
 BigInteger

@@ -1,4 +1,4 @@
-package _3_variables;
+package _2_data_types._2_1_variables;
 
 public class MultipleVariables {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package _10_tables;
+package _8_tables;
 
 public class MultidimensionalArray {
     public static void main(String[] args) {

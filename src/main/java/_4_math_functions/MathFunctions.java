@@ -1,4 +1,4 @@
-package _5_math_functions_BigInteger_BigDecimal;
+package _4_math_functions;
 
 //  sqrt(double number)  -> radical (pierwiastek)
 //  pow(double a, double b)  -> power (potega) result = a powered to b

@@ -1,4 +1,4 @@
-package _4_math_and_logic_operators;
+package _3_math_and_logic_operators;
 
 public class AssignmentOperator {
     public static void main(String[] args) {

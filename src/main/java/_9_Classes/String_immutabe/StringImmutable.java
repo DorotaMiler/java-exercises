@@ -1,4 +1,4 @@
-package _11_Classes.String_immutabe;
+package _9_Classes.String_immutabe;
 
 public class StringImmutable {
     public static void main(String[] args) {

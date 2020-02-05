@@ -1,9 +1,7 @@
-package _8_Scanner;
+package _6_Scanner;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.Scanner;
 
 public class WriterToFile {
     public static void main(String[] args) throws FileNotFoundException {
