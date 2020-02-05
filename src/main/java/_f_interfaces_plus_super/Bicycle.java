@@ -2,6 +2,8 @@ package _f_interfaces_plus_super;
 
 public class Bicycle extends Car {
 
+    private int velocity;
+
     @Override
     public void move(int velocity) {
         this.velocity = velocity;
@@ -11,11 +13,6 @@ public class Bicycle extends Car {
     @Override
     public void stop() {
         System.out.println("Bicycle stopped.");
-    }
-
-    @Override
-    public void startEngineEx() {
-        System.out.println("Bicycle's engine starts.Let's pedal Mevo!");
     }
 
     public void jump() {

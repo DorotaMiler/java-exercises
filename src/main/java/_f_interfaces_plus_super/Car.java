@@ -2,10 +2,11 @@ package _f_interfaces_plus_super;
 
 public class Car implements Vehicle {
 
-    int velocity;
-    protected int tankCapacity = 60;
+    private int velocity;
+    private int tankCapacity = 60;
     // @ the beginnign of a ride:
-    protected int fuelLevel = tankCapacity;
+    private int fuelLevel = tankCapacity;
+    private int toFill;
 
     public void fillTank() {
         int toFill = tankCapacity - fuelLevel;
@@ -18,9 +19,8 @@ public class Car implements Vehicle {
         } else {
             fuelLevel += toFill;
             System.out.println("Tank has been successfully filled with " + toFill + " litres of fuel");
-            }
         }
-
+    }
 
     @Override
     public void move(int velocity) {
@@ -31,10 +31,6 @@ public class Car implements Vehicle {
     @Override
     public void stop() {
         System.out.println("A car has stopped.");
-    }
-
-    public void drift() {
-        System.out.println("A car has drifted!");
     }
 
     @Override
@@ -48,5 +44,9 @@ public class Car implements Vehicle {
             return;
         }
         System.out.println("Velocity measured as HIGH!");
+    }
+
+    public void drift() {
+        System.out.println("A car has drifted!");
     }
 }

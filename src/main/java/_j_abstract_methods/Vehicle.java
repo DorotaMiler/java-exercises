@@ -8,11 +8,6 @@ public class Vehicle {
     private Engine engine;
     private Date producionDate;
 
-    public Vehicle(Engine engine, int numberOfWheels) {
-        this.engine = engine;
-        this.numberOfWheels = numberOfWheels;
-    }
-
     public int getNumberOfWheels() {
         return numberOfWheels;
     }

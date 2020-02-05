@@ -16,7 +16,7 @@ public class CarEx {
         this.name = name;
     }
 
-    public CarEx(EngineEx engine){
+    public CarEx(EngineEx engine) {
         this.engine = engine;
     }
 
@@ -93,6 +93,18 @@ public class CarEx {
             System.out.println(car1.getName());
         } else {
             System.out.println(car2.getName());
+        }
+    }
+
+    public static void renameFasterCar(CarEx car1, CarEx car2) {
+        if (car1.getMaxSpeed() > car2.getMaxSpeed()) {
+            String a = car1.getName();
+            car1.setName("faster car");
+            System.out.println(a + " is a " + car1.getName());
+        } else {
+            String a = car2.getName();
+            car2.setName("faster car");
+            System.out.println(a + " is a " + car2.getName());
         }
     }
 }
