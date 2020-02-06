@@ -2,7 +2,7 @@ package _c_inheritance._c_4_overriding;
 
 public class Animal {
     private String name;
-    private Integer age;
+    private int age;
     private double weight;
 
     public void setName(String name) {
@@ -20,12 +20,17 @@ public class Animal {
     public Integer getAge() {
         return age;
     }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
     
     public double getWeight() {
         return weight;
+    }
+
+    public void eat(double weight) {
+        this.weight += 1 / 4 * weight;
+        System.out.println("Animal eats and gets bigger so now weights: " + getWeight());
+    }
+
+    public void growOld(int age) {
+        this.age += age;
     }
 }
