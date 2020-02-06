@@ -20,7 +20,7 @@ public class Animal {
     public Integer getAge() {
         return age;
     }
-    
+
     public double getWeight() {
         return weight;
     }
