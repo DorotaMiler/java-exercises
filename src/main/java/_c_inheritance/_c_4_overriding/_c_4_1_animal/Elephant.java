@@ -2,9 +2,14 @@ package _c_inheritance._c_4_overriding._c_4_1_animal;
 
 public class Elephant extends Animal {
 
-    @Override
-    public void setName(String name) {
+    public Elephant(){
+        super();
+        System.out.println("Nameless elephant created.");
+    }
 
+    public Elephant(String name){
+        super(name);
+        System.out.println("Elephant called: "+name+" created");
     }
 
     @Override
