@@ -107,4 +107,16 @@ public class CarEx {
             System.out.println(a + " is a " + car2.getName());
         }
     }
+
+    // the same as reameFasterCar() with if but switch utilization:
+    public static void renameFasterCarSwitchV(CarEx car1, CarEx car2) {
+        boolean firstCar = car1.getMaxSpeed() > car2.getMaxSpeed();
+        switch (firstCar) {
+            case 1:
+                car1.setName("faster car");
+                break;
+            default:
+                car2.setName("Faster car");
+        }
+    }
 }

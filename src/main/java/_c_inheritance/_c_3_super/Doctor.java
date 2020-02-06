@@ -1,4 +1,4 @@
-package _g_super;
+package _c_inheritance._c_3_super;
 
 public class Doctor extends Worker {
     private double bonus;
