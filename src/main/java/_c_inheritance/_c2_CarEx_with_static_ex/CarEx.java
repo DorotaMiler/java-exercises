@@ -109,14 +109,30 @@ public class CarEx {
     }
 
     // the same as reameFasterCar() with if but switch utilization:
-    public static void renameFasterCarSwitchV(CarEx car1, CarEx car2) {
-        boolean firstCar = car1.getMaxSpeed() > car2.getMaxSpeed();
-        switch (firstCar) {
-            case 1:
-                car1.setName("faster car");
+    public static void renameFasterCarWithSwitch(CarEx car1, CarEx car2) {
+        int result;
+        if (car1.getMaxSpeed() > car2.getMaxSpeed()) {
+            result = 1;
+        } else if (car1.getMaxSpeed() < car2.getMaxSpeed()) {
+            result = -1;
+        } else {
+            result = 0;
+        }
+
+        switch (result) {
+            case (-1):
+                String a = car2.getName();
+                car2.setName("faster car");
+                System.out.println(a + " is a " + car2.getName());
                 break;
-            default:
-                car2.setName("Faster car");
+            case (1):
+                String b = car1.getName();
+                car1.setName("faster car");
+                System.out.println(b + " is a " + car2.getName());
+                break;
+            case (0):
+                System.out.println("Both cars ride with the same speed");
+                break;
         }
     }
 }

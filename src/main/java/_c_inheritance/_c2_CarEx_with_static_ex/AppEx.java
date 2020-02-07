@@ -68,12 +68,13 @@ public class AppEx {
 
         CarEx car6 = new CarEx("car6", 100);
         CarEx car7 = new CarEx("car7", 200);
+        CarEx car8 = new CarEx("car8", 500);
         CarEx.compareMaxSpeed(car6, car7);
 
         CarEx.renameFasterCar(car6, car7);
-
-        // getName() of both objects
         System.out.println(car6.getName());
         System.out.println(car7.getName());
+
+        CarEx.renameFasterCarWithSwitch(car7, car8);
     }
 }
