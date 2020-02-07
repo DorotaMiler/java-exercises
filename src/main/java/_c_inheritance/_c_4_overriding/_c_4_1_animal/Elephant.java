@@ -1,6 +1,6 @@
 package _c_inheritance._c_4_overriding._c_4_1_animal;
 
-public class Elephant extends Animal {
+public class Elephant extends Animal implements Herbivore{
 
     public Elephant(){
         super();
@@ -21,5 +21,10 @@ public class Elephant extends Animal {
     @Override
     public void growOld(int age) {
         super.growOld(age/3);
+    }
+
+    @Override
+    public void eatPlant(double weight) {
+
     }
 }

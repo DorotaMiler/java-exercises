@@ -1,6 +1,6 @@
 package _c_inheritance._c_4_overriding._c_4_1_animal;
 
-public class Parrot extends Animal {
+public class Parrot extends Animal implements Herbivore{
     @Override
     public void setName(String name) {
     }
@@ -11,5 +11,10 @@ public class Parrot extends Animal {
 
     @Override
     public void growOld(int age) {
+    }
+
+    @Override
+    public void eatPlant(double weight) {
+
     }
 }
