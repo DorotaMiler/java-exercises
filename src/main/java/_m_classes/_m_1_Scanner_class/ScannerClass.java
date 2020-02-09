@@ -16,4 +16,17 @@ public class ScannerClass {
         double sum = firstNumber + secondNumber;
         System.out.println("Sum of entered numbers = " + sum);
     }
+
+    public void objectFeatures() {
+        String make;
+        int maxSpeed;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter car's make: ");
+        make = scan.nextLine();
+        System.out.println("Thanks!" + "\nnow enter " + make + "'s max speed: ");
+        maxSpeed = scan.nextInt();
+        CarScan carScan = new CarScan(make, maxSpeed);
+        System.out.println("\nSummary -> given car's features: " + "\n" + carScan.getMake() + ", " + carScan.getMaxSpeed());
+    }
 }

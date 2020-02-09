@@ -5,5 +5,7 @@ public class Main {
 
         ScannerClass scan = new ScannerClass();
         scan.scannerSum();
+        scan.objectFeatures();
+
     }
 }
