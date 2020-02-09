@@ -1,4 +1,4 @@
-package _6_Scanner;
+package _6_stream;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

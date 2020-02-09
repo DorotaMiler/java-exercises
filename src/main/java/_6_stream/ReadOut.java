@@ -1,4 +1,4 @@
-package _6_Scanner;
+package _6_stream;
 
 import javax.xml.bind.SchemaOutputResolver;
 import java.io.File;
