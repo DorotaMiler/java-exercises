@@ -9,7 +9,7 @@ public class Main {
         loop1.iterator();
         loop1.continueEx();
         System.out.println("\n");
-        Loops.oddNumber(9);
+        Loops.oddNumber(35);
 
     }
 }

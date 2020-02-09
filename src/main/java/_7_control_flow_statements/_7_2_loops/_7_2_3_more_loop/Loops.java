@@ -43,19 +43,17 @@ public class Loops {
     public static void oddNumber(int param) {
 //        System.out.println("These are the odd numbers not greater than given parameter: " + param);
         for (int i = 0; i <= param; i++) {
+//            System.out.println("oddNumber() -> Current iteration number to go through loop: " + i);
             if (i % 2 == 0) {
                 continue;
-            } else if (param % 11 == 0) {
-                break;
-            } else {
-                System.out.println("Odd number: " + i);
             }
+            if (i % 11 == 0) {
+                break;
+            }
+            System.out.println("Odd number: " + i);
         }
     }
 }
-
-
-
 
 
 
