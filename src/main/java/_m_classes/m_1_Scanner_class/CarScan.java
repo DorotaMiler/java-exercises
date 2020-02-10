@@ -1,4 +1,4 @@
-package _m_classes._m_1_Scanner_class;
+package _m_classes.Scanner_class;
 
 public class CarScan {
     private String make;
