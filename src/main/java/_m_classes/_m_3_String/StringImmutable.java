@@ -19,7 +19,18 @@ public class StringImmutable {
         System.out.println(c);
 
         // substring()
-        System.out.println("Chars from 2nd till 4th -> "+c.substring(2, 4));
+        System.out.println("Chars from 2nd till 4th -> " + c.substring(2, 4));
+
+        // '+' utilization like StringBuilder with append() with argument lastly casting .toString()
+        // so below 1st approach:
+        String s = "Kasia";
+        s = s + " i Tomek";
+        System.out.println("+ operators's utilization: " + s);
+
+        // 2nd approach:
+        String w = "Kasia ";
+        w = new StringBuffer(w).append("i Tomek").toString();
+        System.out.println("StringBuffer utilized literally: " + w);
 
     }
 }
