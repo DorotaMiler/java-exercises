@@ -37,8 +37,8 @@ public class StringImmutable {
         System.out.println("s1 equals s2?: " + s1.equals(s2));
         System.out.println("s1 equalsIgnoreCase s2?: " + s1.equalsIgnoreCase(s2));
         System.out.println("s1 == s2?: " + (s1 == s2));
-        System.out.println("s1 compareToIgnoreCase?: " + s1.compareToIgnoreCase(s2));
-        System.out.println("s1 compare s2?: " + s2.compareTo(s2));
+        System.out.println("s1 compareToIgnoreCase?: " + s1.compareToIgnoreCase(s2)); // 0 -> they are equal (compares the Unicode value)
+        System.out.println("s1 compare s2?: " + s1.compareTo(s2));  // -32 -> compareTo() is case sensitive
 
     }
 }
