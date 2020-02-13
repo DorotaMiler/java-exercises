@@ -40,5 +40,16 @@ public class StringImmutable {
         System.out.println("s1 compareToIgnoreCase?: " + s1.compareToIgnoreCase(s2)); // 0 -> they are equal (compares the Unicode value)
         System.out.println("s1 compare s2?: " + s1.compareTo(s2));  // -32 -> compareTo() is case sensitive
 
+        String s3 = " DorotaMiler ";
+        System.out.println("\" DorotaMiler \" to upper case: " + s3.toUpperCase());
+        System.out.println("\" DorotaMiler \" to lower case: " + s3.toLowerCase());
+        System.out.println("\" DorotaMiler \" trim: " + s3.trim());
+        System.out.println("\" DorotaMiler \" starts with: " + s3.startsWith(" Do"));
+        System.out.println("\" DorotaMiler \" ends with: " + s3.endsWith("er"));
+        System.out.println("\" DorotaMiler \" character at 5th position: " + s3.charAt(5));
+        System.out.println("\" DorotaMiler \" length: " + s3.length());
+        System.out.println("\" DorotaMiler \" 10th value: " + s3.valueOf(10));
+        System.out.println("\" DorotaMiler \" replace: " + s3.replace("Miler", "Ludwicka"));
+
     }
 }
