@@ -1,4 +1,4 @@
-package _k_enum;
+package _k_enum._k_1_Jeans;
 
 public class Jeans {
     private JeansSize size;
@@ -32,4 +32,14 @@ public class Jeans {
                 ", manufacturer='" + manufacturer + '\'' +
                 '}';
     }
+
+    sizePrintOut(JeansSize size){
+        Jeans jeans = new Jeans();
+        switch(jeans.size){
+            case S:
+                System.out.println("You bought jeans in "+jeans.size(S));
+        }
+
+    }
+
 }

@@ -1,4 +1,4 @@
-package _k_enum;
+package _k_enum._k_1_Jeans;
 
 public class Main {
     public static void main(String[] args) {
