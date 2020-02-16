@@ -61,7 +61,7 @@ public class Jeans {
                     System.out.println("You bought jeans in " + JeansSize.XS.name() + " size.");
                     break;
                 case S:
-                    System.out.println("You bought jeans in " + JeansSize.S.name() + " size.");
+                    System.out.println("You bought jeans in " + JeansSize.valueOf("S") + " size.");
                     break;
                 case M:
                     System.out.println("You bought jeans in " + JeansSize.M.name() + " size.");

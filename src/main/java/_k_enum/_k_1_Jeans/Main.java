@@ -9,5 +9,6 @@ public class Main {
 
         //  2nd approach
         jeans.sizePrintOut(JeansSize.M);
+        jeans.sizePrintOut(JeansSize.S);
     }
 }
