@@ -7,13 +7,4 @@ public enum JeansSize {
     L,
     XL;
 
-    private char size;
-
-    public char getSize() {
-        return size;
-    }
-    JeansSize(final String size){
-        this.size = size;
-    }
-
 }
