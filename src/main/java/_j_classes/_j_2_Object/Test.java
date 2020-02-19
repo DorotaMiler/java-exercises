@@ -10,7 +10,7 @@ public class Test {
         // } else {
         //   return false;
         // }
-        
+
         // now we utilize equals() from Objects class
         return Objects.equals(o1, o2);
     }

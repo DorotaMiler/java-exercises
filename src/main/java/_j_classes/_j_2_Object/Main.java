@@ -6,6 +6,6 @@ public class Main {
         ObjectsClass objectsClass1 = new ObjectsClass();
         ObjectsClass objectsClass2 = new ObjectsClass();
         Test test = new Test();
-        System.out.println(test.compareObjects(objectClass1,objectsClass2));
+        System.out.println(test.compareObjects(objectsClass1,objectsClass2));
     }
 }
