@@ -1,9 +1,6 @@
 package _j_abstract_methods;
 
-
-
 import _c_inheritance._c2_CarEx_with_static_ex.EngineEx;
-
 import java.util.Date;
 import java.util.Objects;
 
@@ -14,17 +11,14 @@ public class Car extends Vehicle {
     private Engine engine;
     private Colour colour;
 
-    public Car(){
-    }
-
     public Car() {
         name = "default";
         maxSpeed = 100;
-        engine = new EngineEx(1,1);
+        engine = new EngineEx(1, 1);
         colour = Colour.WHITE;
     }
 
-    public Car(String name, int maxSpeed, EngineEx engine, Colour colour){
+    public Car(String name, int maxSpeed, EngineEx engine, Colour colour) {
         this.name = name;
         this.maxSpeed = maxSpeed;
         this.engine = engine;

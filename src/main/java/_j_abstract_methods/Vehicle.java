@@ -8,8 +8,8 @@ public class Vehicle {
     private Engine engine;
     private Date producionDate;
 
-    public int getNumberOfWheels() {
-        return numberOfWheels;
+    public static int getNumberOfWheels() {
+        return NUMBER_OF_WHEELS;
     }
 
     public Engine getEngine() {
