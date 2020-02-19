@@ -1,5 +1,7 @@
 package _h_types_comparison._h_2_equals;
 
+import java.util.Objects;
+
 public class Product {
     private String name;
     private double price;
@@ -25,6 +27,23 @@ public class Product {
         this.price = price;
     }
 
-    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            //  the above checks if the argument is of the type
+            //  Product by comparing the classes of the passed argument
+            //  and this object. Same as:
+            //  if(!(o instance of Product))
+            //  return flse;
+            return true;
+        if (!(o instanceof Product)) return false;
+        Product product = (Product) o;
+        return Double.compare(product.getPrice(), getPrice()) == 0 &&
+                Objects.equals(getName(), product.getName());
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getPrice());
+    }
 }
