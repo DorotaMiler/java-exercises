@@ -20,4 +20,16 @@ public class Test {
             System.out.println("a doesn't equal() b");
         }
     }
+
+    public static void productsComparison(Product product1, Product product2) {
+        if (product1.equals(product2)) {
+            if (product1.hashCode() == product2.hashCode()) {
+                System.out.println("Objects: " + product1.getName() + " and " + product2.getName() + " are equal!");
+            } else {
+                System.out.println("Objects: " + product1.getName() + " and " + product2.getName() + " are not equal :(");
+            }
+        } else {
+            System.out.println("Objects: " + product1.getName() + " and " + product2.getName() + " are not equal :(");
+        }
+    }
 }

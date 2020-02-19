@@ -13,5 +13,12 @@ public class Main {
         System.out.println(test.a.hashCode());
         System.out.println(test.b.hashCode());
 
+        Product product1 = new Product("Juice", 28);
+        Product product2 = new Product("Juice", 28);
+
+        Product product1 = new Product("Juice", 28);
+        Product product2 = new Product("Juice", 28);
+
+        Test.productsComparison(product1, product2);
     }
 }

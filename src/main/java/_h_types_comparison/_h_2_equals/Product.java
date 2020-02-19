@@ -6,7 +6,7 @@ public class Product {
     private String name;
     private double price;
 
-    public Product(String name, double price){
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -32,11 +32,15 @@ public class Product {
         if (this == o)
             //  the above checks if the argument is of the type
             //  Product by comparing the classes of the passed argument
-            //  and this object. Same as:
+            //  and this object. Same as below:
             //  if(!(o instance of Product))
-            //  return flse;
+            //  return false;
             return true;
-        if (!(o instanceof Product)) return false;
+        if (!(o instanceof Product))
+            return false;
+        if (o == null || o.getClass() != this.getClass()) {
+            return false;
+        }
         Product product = (Product) o;
         return Double.compare(product.getPrice(), getPrice()) == 0 &&
                 Objects.equals(getName(), product.getName());
