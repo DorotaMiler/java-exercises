@@ -1,4 +1,4 @@
-package _m_classes._m_2_Object._m_2_1_equals;
+package _h_types_comparison._h_2_equals;
 
 public class Test {
 

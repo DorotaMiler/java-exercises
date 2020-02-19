@@ -1,4 +1,4 @@
-package _h_hashcode;
+package _h_types_comparison._h_1_objects_comparison_with_hashcode;
 
 import java.io.IOException;
 import java.nio.file.Path;
