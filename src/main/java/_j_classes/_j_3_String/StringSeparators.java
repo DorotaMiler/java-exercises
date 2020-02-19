@@ -7,7 +7,7 @@ public class StringSeparators {
         String[] stringArray = string.split(":");
         System.out.println("Strings array's length: " + stringArray.length);
         for (int i = 0; i < stringArray.length; i++) {
-            System.out.print(stringArray[i]);
+            System.out.print(stringArray[i] + " ");
         }
     }
 }
