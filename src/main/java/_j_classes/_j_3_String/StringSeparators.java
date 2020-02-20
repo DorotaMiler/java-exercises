@@ -9,14 +9,18 @@ public class StringSeparators {
         String[] stringArray = string.split(":");
         System.out.println("Strings array's length: " + stringArray.length);
         for (int i = 0; i < stringArray.length; i++) {
-            System.out.print(stringArray[i] + " ");
+            String newString = stringArray[i] + " ";
+            if (i == stringArray.charAt(stringArray.length - 1)) {
+                System.out.println(newString.trim());
+            }
         }
     }
-    dotsInString(){
 
-    }
+//    dotsInString() {
+//
+//    }
 
-    public String scannerIntro(String inputLine){
+    public String scannerIntro(String inputLine) {
         Scanner scan = new Scanner(System.in);
         inputLine = scan.nextLine();
     }
