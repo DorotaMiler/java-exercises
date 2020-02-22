@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class StringSeparators {
 
-    public static void colonsInString() {
-        String string = "string:separated:by:colons";
+    String string;
+
+    public static void colonsInString(String string) {
         String[] stringArray = string.split(":");
         System.out.println("Strings array's length: " + stringArray.length);
         String newString = "";
@@ -16,20 +17,20 @@ public class StringSeparators {
     }
 
 
-    public static void dotsInString(String string) {
-        String scanned = string.scannerIntro();
-        int counter = 0;
-        String[] stringArray = string.split(".");
-        for (int i = 0; i < stringArray.length; i++) {
-            counter = counter + string.indexOf(".");
-            System.out.println("Amount of dots in given sentence: " + counter);
-        }
-    }
-
-    public String scannerIntro(String inputLine) {
-        System.out.println("Please enter a random sentence: ");
-        Scanner scan = new Scanner(System.in);
-        inputLine = scan.nextLine();
-        return inputLine;
-    }
+//    public Integer dotsInString(String string) {
+//        scannerSentence(string);
+//        Integer counter = 0;
+//        String[] stringArray = string.split(".");
+//        for (int i = 0; i < stringArray.length; i++) {
+//            counter = counter + string.indexOf(".");
+//        }
+//        return counter;
+//    }
+//
+//    public String scannerSentence(String inputLine) {
+//        System.out.println("Please enter a random sentence: ");
+//        Scanner scan = new Scanner(System.in);
+//        inputLine = scan.nextLine();
+//        return inputLine;
+//    }
 }
