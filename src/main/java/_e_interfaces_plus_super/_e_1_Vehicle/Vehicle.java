@@ -1,4 +1,4 @@
-package _e_interfaces_plus_super;
+package _e_interfaces_plus_super._e_1_Vehicle;
 
 /**
  * -> all METHODS are by default public and abstract (cannot be static)

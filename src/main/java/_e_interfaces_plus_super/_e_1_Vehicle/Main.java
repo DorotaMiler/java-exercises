@@ -1,4 +1,4 @@
-package _e_interfaces_plus_super;
+package _e_interfaces_plus_super._e_1_Vehicle;
 
 public class Main {
     public static void main(String[] args) {
