@@ -1,10 +1,10 @@
-package _g_exceptions._i2_throw;
+package _g_exceptions._g_2_throw;
 
 public class ArithmeticEx {
     public static void main(String[] args) {
 
         try {
-            System.out.println("Equation result: "+devide(10, 0));
+            System.out.println("Equation result: " + devide(10, 0));
         } catch (ArithmeticException e) {
             System.out.println("Not possible to divide by 0.");
         }

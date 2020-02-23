@@ -1,4 +1,4 @@
-package _g_exceptions._i2_practice_section;
+package _g_exceptions._g_6_practice_section;
 
 import java.io.*;
 import java.util.Arrays;
@@ -27,7 +27,7 @@ public class FileManager {
             try {
                 writer.write("This is to be written into the practice.txt file");
             } catch (IOException e) {
-                throw new InternetConnectionException("Internet connection issue when when " + writer + " initiated." + "\nPlease check your wi-fi connection.");
+                throw new InternetConnectionException("Internet connection issue when " + writer + " initiated." + "\nPlease check your wi-fi connection.");
             }
         }
     }
