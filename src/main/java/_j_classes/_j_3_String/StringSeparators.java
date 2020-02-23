@@ -13,6 +13,7 @@ public class StringSeparators {
         for (int i = 0; i < stringArray.length; i++) {
             sb.append(stringArray[i] + " ");
             // sb.append(stringArray[i]).append(" "); -> almost doubles processing time
+            // StringBuffer on other hand - synchronized therefore more time consuming (Time over 180000)
         }
         newString = sb.toString();
         System.out.println(newString.trim() + "; Time1: " + (System.nanoTime() - start));
