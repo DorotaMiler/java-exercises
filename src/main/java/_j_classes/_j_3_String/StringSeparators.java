@@ -9,9 +9,12 @@ public class StringSeparators {
         System.out.println("Strings array's length: " + stringArray.length);
         long start = System.nanoTime();
         String newString = "";
+        StringBuilder sb = new StringBuilder(newString);
         for (int i = 0; i < stringArray.length; i++) {
-            newString = newString + stringArray[i] + " ";
+            sb.append(stringArray[i] + " ");
+            // sb.append(stringArray[i]).append(" "); -> almost doubles processing time
         }
+        newString = sb.toString();
         System.out.println(newString.trim() + "; Time1: " + (System.nanoTime() - start));
     }
 
