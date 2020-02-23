@@ -7,18 +7,19 @@ public class StringSeparators {
     public static void colonsInString(String string) {
         String[] stringArray = string.split(":");
         System.out.println("Strings array's length: " + stringArray.length);
+        long start = System.nanoTime();
         String newString = "";
         for (int i = 0; i < stringArray.length; i++) {
             newString = newString.concat(stringArray[i] + " ");
         }
-        System.out.println(newString.trim());
+        System.out.println(newString.trim() + "; Time1: " + (System.nanoTime() - start));
     }
 
     public int dotsInString() {
         intro();
         String string = scannedString();
         int counter = string.length() - string.replace(".", "").length();
-        System.out.println("Amount of dots in given sentence: "+counter);
+        System.out.println("Amount of dots in given sentence: " + counter);
         return counter;
     }
 
