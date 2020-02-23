@@ -2,7 +2,7 @@ package _j_classes._j_3_String;
 
 import java.util.StringJoiner;
 
-public class JoiningStrings {
+public class StringConcat {
 
     public static void stringsJoining() {
         StringJoiner joiner = new StringJoiner(" ", "{", "}");

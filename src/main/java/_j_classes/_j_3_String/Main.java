@@ -1,6 +1,6 @@
 package _j_classes._j_3_String;
 
-import static _j_classes._j_3_String.JoiningStrings.stringsJoining;
+import static _j_classes._j_3_String.StringConcat.stringsJoining;
 import static _j_classes._j_3_String.StringSeparators.colonsInString;
 
 public class Main {
