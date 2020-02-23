@@ -27,7 +27,7 @@ public class StringSeparators {
         return counter;
     }
 
-    public static void intro() {
+    public void intro() {
         System.out.println("Please enter a random sentence: ");
     }
 
