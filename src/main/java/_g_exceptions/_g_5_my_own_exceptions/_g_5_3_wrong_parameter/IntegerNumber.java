@@ -3,31 +3,25 @@ package _g_exceptions._g_5_my_own_exceptions._g_5_3_wrong_parameter;
 import java.util.Scanner;
 
 public class IntegerNumber {
-    
+
     public void intro() {
         System.out.println("Please enter a single integer: ");
     }
 
     public int integerRequest() {
         intro();
-        int number = scanNumber();
+        int number = 0;
         boolean isInteger = true;
 
         while (isInteger) {
+            Scanner scan = new Scanner(System.in);
             try {
-                number;
-                isInteger = !isInteger
+                number = scan.nextInt();
+                isInteger = !isInteger;
             } catch (Exception e) {
                 System.out.println("Inserted number is not an integer. Please try again: ");
             }
         }
         return number;
     }
-
-    private int scanNumber() {
-        Scanner scan = new Scanner(System.in);
-        int scannedNumber = scan.nextInt();
-        return scannedNumber;
-    }
-
 }
