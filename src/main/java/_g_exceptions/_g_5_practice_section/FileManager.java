@@ -1,4 +1,4 @@
-package _g_exceptions._g_6_practice_section;
+package _g_exceptions._g_5_practice_section;
 
 import java.io.*;
 import java.util.Arrays;
