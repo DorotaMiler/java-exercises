@@ -1,4 +1,4 @@
-package _g_exceptions._g_4_my_own_exceptions._g_5_2_File_Existance;
+package _g_Exceptions._g_4_my_own_exceptions._g_5_2_File_Existance;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package _g_exceptions._g_2_throw;
+package _g_Exceptions._g_2_throw;
 
 public class ArithmeticEx {
     public static void main(String[] args) {

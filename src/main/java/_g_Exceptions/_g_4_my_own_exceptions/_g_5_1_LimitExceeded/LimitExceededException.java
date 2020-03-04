@@ -1,4 +1,4 @@
-package _g_exceptions._g_4_my_own_exceptions._g_5_1_LimitExceeded;
+package _g_Exceptions._g_4_my_own_exceptions._g_5_1_LimitExceeded;
 
 import java.io.IOException;
 

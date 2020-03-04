@@ -1,4 +1,4 @@
-package _g_exceptions._g_1_try_catch._i1_1_try_catch;
+package _g_Exceptions._g_1_try_catch._i1_1_try_catch;
 
 import java.util.Scanner;
 
