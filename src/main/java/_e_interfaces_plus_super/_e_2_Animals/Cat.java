@@ -1,6 +1,7 @@
 package _e_interfaces_plus_super._e_2_Animals;
 
 public class Cat implements Animal {
+    int final NUMBER_OF_PAWS = 4;
     String name;
 
     public void miaus() {
