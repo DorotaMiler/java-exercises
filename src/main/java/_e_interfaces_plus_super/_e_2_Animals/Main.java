@@ -7,12 +7,11 @@ public class Main {
 
         dog.eat();
         dog.bark();
-        dog.name("Pluto");
+        dog.name="Pluto";
         System.out.println(dog.name);
         cat.eat();
         cat.miaus();
-        cat.name("Klakier");
+        cat.name="Klakier";
         System.out.println(cat.name);
-
     }
 }
