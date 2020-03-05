@@ -1,5 +1,7 @@
 package _e_interfaces_plus_super._e_3_Microwave;
 
+import java.time.Duration;
+
 public interface MicrowaveOwen {
 
     void start();
@@ -10,7 +12,28 @@ public interface MicrowaveOwen {
 
     void setPower(int power);
 
-    default String getName(){
+    // default methods in interface possible to be overridden
+    default String getName() {
         return "MicrowaveOwen";
+    }
+
+    default Duration getRecommendedDefrostTime(double foodWeightInGrams) {
+        double frostRate = 0.8;
+        int power = 300;
+        return getRecommendedTime(power, frostRate, foodWeightInGrams);
+    }
+
+    default Duration getRecommendedWarmingTime(double foodWeightInGRams) {
+        double frostRate = 0.2;
+        int power = 700;
+        return getRecommendedTime(power, frostRate, foodWeightInGRams);
+    }
+
+    //  private methods allow to avoid repetion of code within interface definition ( interface { ..} )
+
+    private Duration getRecommendedTime(int power, double frostRate, double foodWeightInGrams) {
+        double durationInMinutes = foodWeightInGrams / ((1 - frostRate) * power);
+        long durationInSeconds = (long) (durationInMinutes * 60);
+        return Duration.ofSeconds((durationInSeconds));
     }
 }
