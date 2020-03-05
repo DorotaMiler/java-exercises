@@ -1,7 +1,5 @@
 package _g_Exceptions._g_1_try_catch;
 
-import com.sun.java.util.jar.pack.Attribute;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,7 +12,7 @@ public class WhileTillCorrectValue {
         try {
             getIntegerValue();
         } catch (NumberFormatException | IOException e) {
-            System.out.println((e.printStackTrace()));
+            System.out.println(e.getMessage());
         }
 
 //        getIntegerValue1();

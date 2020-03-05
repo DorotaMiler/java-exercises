@@ -1,18 +1,8 @@
 package _e_interfaces_plus_super._e_2_Animals;
 
-public class Animal {
+public interface Animal {
 
-    private String name;
+    String name= null;
 
-    public void eat(){
-        System.out.println("Animal eats.");
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    void eat();
 }
