@@ -13,6 +13,7 @@ public interface MicrowaveOwen {
     void setPower(int power);
 
     // default methods in interface possible to be overridden
+    // they can have their own implementation in interface's body
     default String getName() {
         return "MicrowaveOwen";
     }
@@ -29,8 +30,8 @@ public interface MicrowaveOwen {
         return getRecommendedTime(power, frostRate, foodWeightInGRams);
     }
 
-    //  private methods allow to avoid repetion of code within interface definition ( interface { ..} )
-
+    //  private methods allow to avoid repetion of code within
+    //  interface definition ( interface { ..} )
     private Duration getRecommendedTime(int power, double frostRate, double foodWeightInGrams) {
         double durationInMinutes = foodWeightInGrams / ((1 - frostRate) * power);
         long durationInSeconds = (long) (durationInMinutes * 60);
