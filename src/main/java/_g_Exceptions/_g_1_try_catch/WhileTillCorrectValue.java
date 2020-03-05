@@ -8,8 +8,14 @@ import java.util.Scanner;
 public class WhileTillCorrectValue {
     public static void main(String[] args) {
 //        correctTableIndex();
-//        getIntegerValue();
-        getIntegerValue1();
+
+        try {
+            getIntegerValue();
+        } catch (NumberFormatException | IOException e) {
+            System.out.println((e.getMessage()));
+        }
+
+//        getIntegerValue1();
     }
 
     public static void correctTableIndex() {
@@ -37,7 +43,7 @@ public class WhileTillCorrectValue {
         }
     }
 
-    public static void getIntegerValue() {
+    public static void getIntegerValue() throws NumberFormatException, IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Integer integer = null;
         boolean isInteger = true;
