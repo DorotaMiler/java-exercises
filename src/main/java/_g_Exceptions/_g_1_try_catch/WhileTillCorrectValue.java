@@ -3,13 +3,13 @@ package _g_Exceptions._g_1_try_catch;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class WhileTillCorrectValue {
     public static void main(String[] args) {
-
-        // correctTableIndex();
-        getIntegerValue();
-
+//        correctTableIndex();
+//        getIntegerValue();
+        getIntegerValue1();
     }
 
     public static void correctTableIndex() {
@@ -51,8 +51,26 @@ public class WhileTillCorrectValue {
             } catch (IOException e) {
                 System.out.println("Error - input/output issue");
             }
-            System.out.println("Confirmation of input integer value: " + integer);
+            isInteger = integer instanceof Integer ? false : true;
         }
+        System.out.println("Correct! -> value confirmation: " + integer);
+    }
 
+    private static void getIntegerValue1() {
+        Scanner scanner;
+        Integer integer = null;
+        boolean isInteger = true;
+
+        while (isInteger) {
+            scanner = new Scanner(System.in);
+            System.out.println("Please advise of an integer number: ");
+            try {
+                integer = scanner.nextInt();
+                isInteger = !isInteger;
+            } catch (Exception e) {
+                System.out.println("This is not an integer - please insert correct integer number:");
+            }
+        }
+        System.out.println("Correct input integer value: " + integer);
     }
 }
