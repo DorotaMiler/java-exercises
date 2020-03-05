@@ -6,6 +6,13 @@ import java.io.InputStreamReader;
 
 public class WhileTillCorrectValue {
     public static void main(String[] args) {
+
+        // correctTableIndex();
+        getIntegerValue();
+
+    }
+
+    public static void correctTableIndex() {
         int[] table = {1, 2, 3, 4, 5, 6};
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int index = -2;
@@ -28,5 +35,24 @@ public class WhileTillCorrectValue {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Given index not accurate (out of bound). Table's length is: " + table.length);
         }
+    }
+
+    public static void getIntegerValue() {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer integer = null;
+        boolean isInteger = true;
+        System.out.println("Please advise of an integer number: ");
+
+        while (isInteger) {
+            try {
+                integer = Integer.parseInt(reader.readLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Input format of data incorrect. Please try again(integer necessary)");
+            } catch (IOException e) {
+                System.out.println("Error - input/output issue");
+            }
+            System.out.println("Confirmation of input integer value: " + integer);
+        }
+
     }
 }
