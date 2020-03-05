@@ -1,5 +1,7 @@
 package _g_Exceptions._g_1_try_catch;
 
+import com.sun.java.util.jar.pack.Attribute;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,13 +14,13 @@ public class WhileTillCorrectValue {
         try {
             getIntegerValue();
         } catch (NumberFormatException | IOException e) {
-            System.out.println((e.getMessage()));
+            System.out.println((e.printStackTrace()));
         }
 
 //        getIntegerValue1();
     }
 
-    public static void correctTableIndex() {
+    public static void correctTableIndex() throws NumberFormatException, IOException {
         int[] table = {1, 2, 3, 4, 5, 6};
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int index = -2;
@@ -62,7 +64,7 @@ public class WhileTillCorrectValue {
         System.out.println("Correct! -> value confirmation: " + integer);
     }
 
-    private static void getIntegerValue1() {
+    private static void getIntegerValue1() throws Exception {
         Scanner scanner;
         Integer integer = null;
         boolean isInteger = true;
