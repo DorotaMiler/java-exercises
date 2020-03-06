@@ -1,8 +1,8 @@
-package _j_classes._j_3_String;
+package _j_classes._j_4_String;
 
-import static _j_classes._j_3_String.StringConcat.collectionsJoining;
-import static _j_classes._j_3_String.StringConcat.stringsJoining;
-import static _j_classes._j_3_String.StringSeparators.colonsInString;
+import static _j_classes._j_4_String.StringConcat.collectionsJoining;
+import static _j_classes._j_4_String.StringConcat.stringsJoining;
+import static _j_classes._j_4_String.StringSeparators.colonsInString;
 
 public class Main {
     public static void main(String[] args) {

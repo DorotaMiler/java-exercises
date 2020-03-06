@@ -1,4 +1,4 @@
-package _j_classes._j_2_Object;
+package _j_classes._j_3_Object;
 
 public class Main {
 
