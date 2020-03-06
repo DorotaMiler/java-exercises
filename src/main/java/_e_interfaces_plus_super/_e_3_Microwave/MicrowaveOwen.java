@@ -8,7 +8,7 @@ public interface MicrowaveOwen {
 
     void setDuration(int durationInSeconds);
 
-    vboolean isFinished();
+    boolean isFinished();
 
     void setPower(int power);
 
@@ -35,6 +35,6 @@ public interface MicrowaveOwen {
     private Duration getRecommendedTime(int power, double frostRate, double foodWeightInGrams) {
         double durationInMinutes = foodWeightInGrams / ((1 - frostRate) * power);
         long durationInSeconds = (long) (durationInMinutes * 60);
-        return Duration.ofSeconds((durationInSeconds));
+        return Duration.ofSeconds(durationInSeconds);
     }
 }
