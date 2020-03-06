@@ -4,7 +4,14 @@ import java.time.Duration;
 
 public class Dog implements Animal {
 
-    String name;
+    private String name;
+
+    public Dog() {
+    }
+
+    public Dog(String name) {
+        this.name = name;
+    }
 
     public void bark() {
         System.out.println("Dog barks!");
@@ -25,7 +32,8 @@ public class Dog implements Animal {
 
     @Override
     public void coveredDistance(int distanceInKilometers, Duration duration) {
-        System.out.println("Dog moved " + distanceInKilometers + " kilometers in " + duration.getSeconds() + " seconds.");
+        Dog dog = new Dog(getName());
+        System.out.println("Dog " + dog.getName() + " moved " + distanceInKilometers + " kilometers in " + duration.getSeconds() + " seconds.");
     }
 
 }
