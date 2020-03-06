@@ -1,5 +1,7 @@
 package _e_interfaces_plus_super._e_2_Animals;
 
+import java.time.Duration;
+
 public class Cat implements Animal {
     final int NUMBER_OF_PAWS = 4;
     String name;
@@ -20,4 +22,10 @@ public class Cat implements Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public void coveredDistance(int distanceInKilometers, Duration duration) {
+        System.out.println("Cat moved " + distanceInKilometers + " kilometers in " + duration.getSeconds() + " seconds.");
+    }
+
 }
