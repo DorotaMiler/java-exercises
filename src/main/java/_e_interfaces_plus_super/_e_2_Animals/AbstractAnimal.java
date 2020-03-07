@@ -5,7 +5,7 @@ public abstract class AbstractAnimal {
     abstract void allAnimlsLive();
 
     public void takeCareOfAnimals(int timesAWeek) throws DaysOverLimitException {
-        timesAWeek => 7;
+        timesAWeek = 8;
         boolean isAWeekDay = true;
         while (isAWeekDay) {
             try {
@@ -13,7 +13,7 @@ public abstract class AbstractAnimal {
             } catch (Exception e) {
                 throw new DaysOverLimitException("Incorrect amount of days: " + timesAWeek, e);
             }
-            isAWeekDay = (timesAWeek => 7) ? false : true;
+            isAWeekDay = timesAWeek == 8 ? false : true;
         }
     }
 }

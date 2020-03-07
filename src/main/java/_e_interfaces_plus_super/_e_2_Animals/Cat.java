@@ -32,4 +32,6 @@ public class Cat extends AbstractAnimal implements Animal {
     void allAnimlsLive() {
         System.out.println("Cats live 9 lives.");
     }
+
+
 }

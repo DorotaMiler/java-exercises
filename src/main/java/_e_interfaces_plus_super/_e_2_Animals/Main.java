@@ -12,9 +12,21 @@ public class Main {
         dog.setName("Pluto");
         dog.coveredDistance(2, Duration.ofDays(3));
         System.out.println(dog.getName());
+
+        try {
+            dog.takeCareOfAnimals(5);
+        }catch(DaysOverLimitException e){
+            System.out.println(e.getMessage());
+        }
+
         cat.eat();
         cat.miaus();
         cat.name="Klakier";
         System.out.println(cat.name);
+        try {
+            cat.takeCareOfAnimals(4);
+        }catch(DaysOverLimitException e){
+            System.out.println(e.getMessage());
+        }
     }
 }

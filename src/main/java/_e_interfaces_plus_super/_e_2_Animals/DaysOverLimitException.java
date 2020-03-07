@@ -14,5 +14,4 @@ public class DaysOverLimitException extends Exception {
     public DaysOverLimitException(String message, Throwable cause) {
         super(message, cause);
     }
-
 }
