@@ -11,7 +11,7 @@ public abstract class AbstractAnimal {
             try {
                 System.out.println("Animals need to be taken care of " + timesAWeek + " times a week.");
             } catch (Exception e) {
-                throw new DaysOverLimitException("Incorrect amount of days: " + timesAWeek);
+                throw new DaysOverLimitException("Incorrect amount of days: " + timesAWeek, e);
             }
             isAWeekDay = (timesAWeek => 7) ? false : true;
         }
