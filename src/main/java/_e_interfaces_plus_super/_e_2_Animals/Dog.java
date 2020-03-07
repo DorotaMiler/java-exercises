@@ -2,7 +2,7 @@ package _e_interfaces_plus_super._e_2_Animals;
 
 import java.time.Duration;
 
-public class Dog implements Animal {
+public class Dog extends AbstractAnimal implements Animal {
 
     private String name;
 
@@ -36,4 +36,8 @@ public class Dog implements Animal {
         System.out.println("Dog " + dog.getName() + " moved " + distanceInKilometers + " kilometers in " + duration.getSeconds() + " seconds.");
     }
 
+    @Override
+    void allAnimlsLive() {
+        System.out.println("Dogs live one happy life.");
+    }
 }

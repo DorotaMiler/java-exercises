@@ -2,7 +2,7 @@ package _e_interfaces_plus_super._e_2_Animals;
 
 import java.time.Duration;
 
-public class Cat implements Animal {
+public class Cat extends AbstractAnimal implements Animal {
     final int NUMBER_OF_PAWS = 4;
     String name;
 
@@ -28,4 +28,8 @@ public class Cat implements Animal {
         System.out.println("Cat moved " + distanceInKilometers + " kilometers in " + duration.getSeconds() + " seconds.");
     }
 
+    @Override
+    void allAnimlsLive() {
+        System.out.println("Cats live 9 lives.");
+    }
 }

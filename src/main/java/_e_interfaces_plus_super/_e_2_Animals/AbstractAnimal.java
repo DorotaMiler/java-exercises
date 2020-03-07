@@ -4,13 +4,16 @@ public abstract class AbstractAnimal {
 
     abstract void allAnimlsLive();
 
-    public void takeCareOfAnimals(int timesAWeek) {
-        while (timesAWeek =<7){
+    public void takeCareOfAnimals(int timesAWeek) throws DaysOverLimitException {
+        timesAWeek => 7;
+        boolean isAWeekDay = true;
+        while (isAWeekDay) {
             try {
                 System.out.println("Animals need to be taken care of " + timesAWeek + " times a week.");
             } catch (Exception e) {
                 throw new DaysOverLimitException("Incorrect amount of days: " + timesAWeek);
             }
+            isAWeekDay = (timesAWeek => 7) ? false : true;
         }
     }
 }
