@@ -1,6 +1,6 @@
 package _2_data_types._2_1_variables;
 
-public class MultipleVariables {
+public class Numbers {
     public static void main(String[] args) {
         int number1 = 5;
         int number2 = number1;

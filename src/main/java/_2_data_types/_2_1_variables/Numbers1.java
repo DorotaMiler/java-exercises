@@ -1,6 +1,6 @@
 package _2_data_types._2_1_variables;
 
-public class Variables {
+public class Numbers1 {
     public static void main(String[] rgs) {
         int age;  //  variable declaration (variable's type choice + it's name)
         age = 19; // afterwards variable initiation

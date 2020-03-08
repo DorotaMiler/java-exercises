@@ -1,6 +1,6 @@
 package _2_data_types._2_1_variables;
 
-public class CalculatorWithFinal {
+public class FinalInCalculator {
     public static void main(String[] args) {
         int a = 5;
         int b = 7;
@@ -11,7 +11,7 @@ public class CalculatorWithFinal {
         final int final2;
         final2 = 3;  //  correct - first initiation
         //  numberPi = 8;  // error - variable initiation already done
-        FinalEx finalEx = new FinalEx();
+        FinalExample finalEx = new FinalExample();
         finalEx.simpleMethod();
 
     }

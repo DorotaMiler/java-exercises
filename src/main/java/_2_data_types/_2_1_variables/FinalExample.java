@@ -1,6 +1,6 @@
 package _2_data_types._2_1_variables;
 
-public class FinalEx {
+public class FinalExample {
     Integer myVariable = 2;
     final Integer MY_CONSTANT = 5;
 
