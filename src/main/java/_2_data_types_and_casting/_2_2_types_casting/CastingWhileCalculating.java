@@ -12,15 +12,15 @@ public class CastingWhileCalculating {
         // (jawna konwersja zawezajaca) - enforcement of conversion by placing brackets with contents of wanted type
         int x = 5;
         double y = 13.5;
+
+        // cranch conversion:
         int z = (int) b / a;  // some data lost, decimal cut out
         System.out.println("z = " + z);  // Math.round() rounds the number, here it is gotten rid of
 
-        /* not necessary action as done automatically
+        // not necessary action as done automatically
+        // extension conversion:
         int a = 5;
         double b = 13.5;
         double c = b / (double) a;
-         */
-
-
     }
 }

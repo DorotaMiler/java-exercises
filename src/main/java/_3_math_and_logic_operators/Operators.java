@@ -3,7 +3,7 @@ package _3_math_and_logic_operators;
 public class Operators {
     public static void main(String[] args) {
 
-        //  Mathematical operators
+        //  Mathematical operators (+, -, *, %, /):
         int a = 17;
         int b = 4;
         int c = a + b;  // 21
@@ -21,6 +21,7 @@ public class Operators {
         int result = 2 + 2 * 2; // 6
         System.out.println(result);
 
+        // shortened operators (x += y):
         int d = 18;
         double e = 5.0;
         d += e;  // d = d + e
@@ -31,6 +32,7 @@ public class Operators {
         d %= e;  // d = d % e
         System.out.println(d);
 
+        // increment (++) & decrement (--) opearators:
         int x = 5;
         int y = 3;
         int z = x + y++;  // z = x + y, and afterwards y = y + 1 so y = 3 still
