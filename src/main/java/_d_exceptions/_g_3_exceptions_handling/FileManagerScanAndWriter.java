@@ -1,4 +1,4 @@
-package _e_exceptions._g_3_exceptions_handling;
+package _d_exceptions._g_3_exceptions_handling;
 
 import java.io.File;
 import java.io.FileWriter;

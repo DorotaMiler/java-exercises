@@ -1,4 +1,4 @@
-package _c_types_comparison._f_2_equals;
+package _c_types_comparison._c_2_equals;
 
 public class Main {
     public static void main(String[] args) {

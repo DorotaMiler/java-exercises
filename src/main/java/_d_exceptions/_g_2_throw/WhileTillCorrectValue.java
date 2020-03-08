@@ -1,4 +1,4 @@
-package _e_exceptions._g_1_try_catch;
+package _d_exceptions._g_2_throw;
 
 import java.io.BufferedReader;
 import java.io.IOException;

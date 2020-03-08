@@ -1,4 +1,4 @@
-package _e_exceptions._g_4_my_own_exceptions._g_5_3_wrong_parameter;
+package _d_exceptions._g_4_my_own_exceptions._g_5_3_wrong_parameter;
 
 public class Main {
     public static void main(String[] args) {
