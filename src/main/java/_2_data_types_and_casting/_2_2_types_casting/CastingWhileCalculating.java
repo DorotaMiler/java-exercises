@@ -4,6 +4,8 @@ public class CastingWhileCalculating {
     public static void main(String[] args) {
 
         // (niejawna [java does it for us] konwersja rozszerzajaca) - having doble devided by int
+        // below not necessary action as done automatically
+        // extension conversion:
         int a = 5;   // before devision is done, a converted to double, therefore c MUST be double as well
         double b = 13.5;
         double c = b / a;  // if c was int, ERROR would occure
@@ -19,8 +21,5 @@ public class CastingWhileCalculating {
 
         // not necessary action as done automatically
         // extension conversion:
-        int a = 5;
-        double b = 13.5;
-        double c = b / (double) a;
     }
 }

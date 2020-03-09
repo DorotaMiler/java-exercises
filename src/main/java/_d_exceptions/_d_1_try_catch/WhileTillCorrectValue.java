@@ -6,17 +6,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class WhileTillCorrectValue {
-    public static void main(String[] args) {
-//        correctTableIndex();
-
-        try {
-            getIntegerValue();
-        } catch (NumberFormatException | IOException e) {
-            System.out.println(e.getMessage());
-        }
-
-//        getIntegerValue1();
-    }
 
     public static void correctTableIndex() throws NumberFormatException, IOException {
         int[] table = {1, 2, 3, 4, 5, 6};
@@ -62,7 +51,7 @@ public class WhileTillCorrectValue {
         System.out.println("Correct! -> value confirmation: " + integer);
     }
 
-    private static void getIntegerValue1() throws Exception {
+    public static void getIntegerValue1() throws Exception {
         Scanner scanner;
         Integer integer = null;
         boolean isInteger = true;
