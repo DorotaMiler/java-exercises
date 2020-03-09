@@ -12,40 +12,22 @@ public class HourToSeconds {
         }
     }
 
-    public void convertHourToSeconds() throws IllegalArgumentException {
-
+    public static void convertHourToSeconds() throws IllegalArgumentException {
+        System.out.println("Please advise of an amount of hours as an integer number, which you would like to convert into correspondent amount of seconds: ");
         Integer numberOfSeconds = 0;
+        Scanner scan = new Scanner(System.in);
+        Integer hours = scan.nextInt();
         boolean isNumberCorrect = true;
         HourToSeconds hourToSeconds = new HourToSeconds();
-        System.out.println("Please advise of an amount of hours as an integer number, which you would like to convert into correspondent amount of seconds: ");
 
         while (isNumberCorrect) {
-            Scanner scan = new Scanner(System.in);
-            Integer hours = scan.nextInt();
             try {
                 numberOfSeconds = hourToSeconds.getNumberOfSeconds(hours);
             } catch (IllegalArgumentException e) {
                 numberOfSeconds = hourToSeconds.getNumberOfSeconds(hours * -1);
             }
-            isNumberCorrect = hours instanceof Integer ? false : true;
+            isNumberCorrect = hours < 0 ? true : false;
         }
-        try {
-            System.out.println();
-        }
-        HourToSeconds hourToSeconds = new HourToSeconds();
-        Scanner scan = new Scanner(System.in);
-        int result = hourToSeconds.getNumberOfSeconds(scan.nextInt());
-        System.out.println("1st calculation result: " + result);
-
-        int hours = -4;
-        int numberOfSeconds = 0;
-        HourToSeconds instance = new HourToSeconds();
-        try {
-            numberOfSeconds = instance.getNumberOfSeconds(hours);
-        } catch (IllegalArgumentException e) {
-            numberOfSeconds = instance.getNumberOfSeconds(hours * -1);
-        }
-        System.out.println(numberOfSeconds);
+        System.out.println("The result of converting " + hours + " hour(s) to seconds = " + numberOfSeconds);
     }
-
 }
