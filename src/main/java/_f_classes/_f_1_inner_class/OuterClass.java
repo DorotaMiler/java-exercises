@@ -15,4 +15,6 @@ public class OuterClass {
         OuterClass.InnerClass instance2 = outerClass.new InnerClass();
     }
 
+
+
 }
