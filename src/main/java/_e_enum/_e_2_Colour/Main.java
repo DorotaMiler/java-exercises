@@ -6,6 +6,6 @@ public class Main {
         Colour red = Colour.RED;
         Make make = Make.AUDI;
         System.out.println("Car's colour is (using enums filed): " + car.getColour(Colour.RED));
-        System.out.println("Car's colour is (using Colour as an object -> colour): " + car.getColour(red).toString().toLowerCase() + "; its make is: " + car.getMake(make).toString().toLowerCase());
+        System.out.println("Car's colour is (using Colour as an object -> colour): " + car.getColour(red).toString().toLowerCase() + "; its make is: " + car.getMake(make).toString().toLowerCase()+"; model: "+car.getMake(Make.AUDI).getModel());
     }
 }
