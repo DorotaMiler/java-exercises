@@ -10,12 +10,17 @@ public class Car implements Vehicle {
     private int fuelLevel = tankCapacity;
     private int toFill;
     private Colour colour;
+    private Make make;
 
    public Car(){
     }
 
     public Car(Colour colour){
        this.colour = colour;
+    }
+
+    public Car(Make make){
+       this.make = make;
     }
 
     public Colour getColour(Colour colour) {
