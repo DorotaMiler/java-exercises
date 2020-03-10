@@ -27,6 +27,10 @@ public class Car implements Vehicle {
         return colour;
     }
 
+    public Make getMake(Make make) {
+        return make;
+    }
+
     public void fillTank() {
         int toFill = tankCapacity - fuelLevel;
         fillTank(toFill);
