@@ -10,7 +10,7 @@ public class Main {
         BoxOnSteroids<Apple> applebox= new BoxOnSteroids<>(new Apple());
         //  the above same as below:
         //  BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
-        BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<Orange>(new Orange());
+        BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
         Orange orange = orangeBox.getFruit();
         System.out.println("Orange from the orange box which is on steroids is: " + orange);
 
