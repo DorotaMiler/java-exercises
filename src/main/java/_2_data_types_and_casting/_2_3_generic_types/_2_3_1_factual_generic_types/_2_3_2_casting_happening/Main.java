@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //  Orange, Apple, FruitBox:
+        //  * Orange, Apple, FruitBox:
         FruitBox fruitBox = new FruitBox(new Orange());
         Orange fruit1 = (Orange) fruitBox.getFruit();
         System.out.println("First orange generated from FruitBox class: " + fruit1.getClass());
 
-        //  BoxOnStreroids, Apple, Orange
+        //  * BoxOnStreroids, Apple, Orange
         BoxOnSteroids<Apple> applebox = new BoxOnSteroids<>(new Apple());
         //  the above same as below:
         //  BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
@@ -19,10 +19,14 @@ public class Main {
 
         Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> pairOfBoxes = new Pair<>(new BoxOnSteroids<>(new Orange()), new BoxOnSteroids<>(new Apple()));
 
-        //  Figure, Circle & BoxForFigures:
+        //  * Figure, Circle & BoxForFigures:
         BoxForFigures<Circle> circleBox = new BoxForFigures<>(new Circle());
         //  BoxForFigures<Apple>applebox //  compilation error
 
+        //  * Rectangle, Aquare & BoxForFigures:
+        Rectangle rectangle = new Square();
+        // -> compilation error:
+        // BoxForFigures<Rectangle>rectangleBox = new BoxForFigures<Square>(new Square());
 
     }
 }
