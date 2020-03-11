@@ -14,5 +14,6 @@ public class Pair<T, S> {
     }
 
     public S getSecond() {
+        return second;
     }
 }
