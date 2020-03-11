@@ -7,7 +7,9 @@ public class Main {
         Orange fruit1 = (Orange) fruitBox.getFruit();
         System.out.println("First orange generated from FruitBox class: " + fruit1.getClass());
 
-        BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
+        BoxOnSteroids<Apple> applebox= new BoxOnSteroids<>(new Apple());
+        //  the above same as below:
+        //  BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
         BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<Orange>(new Orange());
         Orange orange = orangeBox.getFruit();
         System.out.println("Orange from the orange box which is on steroids is: " + orange);
