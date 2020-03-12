@@ -33,5 +33,10 @@ public class Main {
         GenericExample<Apple> genericExample2 = new GenericExample<>(new Apple());
         System.out.println("genericExample1's type is: " + genericExample1.getItem().getClass().getSimpleName());
         System.out.println("genericExample2's type is: " + genericExample2.getItem().getClass().getSimpleName());
+
+        //or:
+        genericExample1.printItem();
+        genericExample2.printItem();
+
     }
 }
