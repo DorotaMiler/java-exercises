@@ -8,6 +8,7 @@ public class GenericExample <T> {
     }
 
     public T getItem() {
+        return item;
     }
 
     public void setItem(T item) {
