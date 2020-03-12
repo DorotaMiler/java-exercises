@@ -28,5 +28,10 @@ public class Main {
         // -> compilation error:
         // BoxForFigures<Rectangle>rectangleBox = new BoxForFigures<Square>(new Square());
 
+        // GenericExample:
+        GenericExample <String> genericExample1= new GenericExample<>();
+        GenericExample <Integer> genericExample2= new GenericExample<>();
+        System.out.println("genericExample1's type is: "+genericExample1.getItem().getClass());
+        System.out.println("genericExample2's type is: "+genericExample2.getItem().getClass());
     }
 }

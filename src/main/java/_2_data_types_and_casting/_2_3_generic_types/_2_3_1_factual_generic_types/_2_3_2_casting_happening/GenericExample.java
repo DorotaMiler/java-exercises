@@ -4,7 +4,14 @@ public class GenericExample <T> {
 
     private T item;
 
+    public GenericExample() {
+    }
+
     public T getItem() {
+    }
+
+    public void setItem(T item) {
+        this.item = item;
     }
 
     public GenericExample(T item){
