@@ -1,4 +1,4 @@
-package _f_classes._f_1_nested_class;
+package _f_classes._f_1_nested_class._f_1_2_static_nestes_class;
 
 public class Main {
     public static void main(String[] args) {
