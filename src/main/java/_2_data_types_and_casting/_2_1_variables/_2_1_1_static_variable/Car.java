@@ -4,20 +4,12 @@ public class Car {
     private String make;
     private String engine;
 
-    private static int numberOfCars;
+    public static int numberOfCars;
 
     public Car(String make, String engine){
         this.make = make;
         this.engine = engine;
         numberOfCars++;
-    }
-
-    public static int getNumberOfCars() {
-        return numberOfCars;
-    }
-
-    public static void setNumberOfCars(int numberOfCars) {
-        Car.numberOfCars = numberOfCars;
     }
 
     public String getEngine() {
@@ -33,7 +25,7 @@ public class Car {
     }
 
     public void setMake(String make) {
-        this.make = make;
+        restructurization of classes package -> nested, static
     }
 
     // getters and setters
