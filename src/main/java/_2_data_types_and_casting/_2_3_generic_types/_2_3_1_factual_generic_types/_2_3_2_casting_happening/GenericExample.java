@@ -9,10 +9,6 @@ public class GenericExample<T> implements Figure {
         this.item = item;
     }
 
-    public String getItemName() {
-        return item.getName();
-    }
-
     public T getItem() {
         return item;
     }
@@ -32,6 +28,6 @@ public class GenericExample<T> implements Figure {
 
 
     public void printItem() {
-        System.out.println("Item's " + item. + "class name is: " + item.getClass().getSimpleName());
+        System.out.println("Item's class name is: " + item.getClass().getSimpleName());
     }
 }

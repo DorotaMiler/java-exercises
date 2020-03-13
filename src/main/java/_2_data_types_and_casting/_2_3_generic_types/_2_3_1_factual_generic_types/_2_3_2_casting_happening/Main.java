@@ -15,15 +15,17 @@ public class Main {
         //  BoxOnSteroids<Apple> appleBox = new BoxOnSteroids<Apple>(new Apple());
         BoxOnSteroids<Orange> orangeBox = new BoxOnSteroids<>(new Orange());
         Orange orange = orangeBox.getFruit();
-        System.out.println("Orange from the orange box which is on steroids is: " + orange);
+        System.out.println("Orange from the orange box which is on steroids is: " + (orange).getClass().getSimpleName());
+        System.out.println("(same as above but different outcome) Orange from the orange box which is on steroids is: " + (orange.getName()));
 
         Pair<BoxOnSteroids<Orange>, BoxOnSteroids<Apple>> pairOfBoxes = new Pair<>(new BoxOnSteroids<>(new Orange()), new BoxOnSteroids<>(new Apple()));
 
         //  * Figure, Circle & BoxForFigures:
         BoxForFigures<Circle> circleBox = new BoxForFigures<>(new Circle());
         //  BoxForFigures<Apple>applebox //  compilation error
-
-        //  * Rectangle, Aquare & BoxForFigures:
+        Circle circle1 = circleBox.getElement();
+        System.out.println("Circle's name: "+circle1.getName());
+        //  * Rectangle, Square & BoxForFigures:
         Rectangle rectangle = new Square();
         // -> compilation error:
         // BoxForFigures<Rectangle>rectangleBox = new BoxForFigures<Square>(new Square());
