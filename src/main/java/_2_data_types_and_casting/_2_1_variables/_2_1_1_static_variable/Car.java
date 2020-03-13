@@ -6,7 +6,7 @@ public class Car {
 
     public static int numberOfCars;
 
-    public Car(String make, String engine){
+    public Car(String make, String engine) {
         this.make = make;
         this.engine = engine;
         numberOfCars++;
@@ -25,8 +25,8 @@ public class Car {
     }
 
     public void setMake(String make) {
-        restructurization of classes package -> nested, static
+        this.make = make;
     }
 
-    // getters and setters
+// getters and setters
 }
