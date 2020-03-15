@@ -6,8 +6,8 @@ import java.util.List;
 public class StaticBlockExample {
 
     //  initializing a list object with pre-defined values
-    // (If static variables require additional, multi-statement
-    // logic while initialization, then a static block can be used)
+    //  (If static variables require additional, multi-statement
+    //  logic while initialization, then a static block can be used)
 
     public static List<String> ranks = new LinkedList<>();
 
@@ -25,5 +25,12 @@ public class StaticBlockExample {
     //  it wouldn't be possible to initialize List object
     //  with all the initial values along with declaration;
     //  that's why utilized the static block here
+
+
+    //  why to use static block:
+    //  -> If initialization of static variables requires some
+    //  additional logic except the assignment
+    //  -> If the initialization of static variables is
+    //  error-prone and requires exception handling
 
 }
