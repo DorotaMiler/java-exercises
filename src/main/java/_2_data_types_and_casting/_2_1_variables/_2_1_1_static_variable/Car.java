@@ -11,7 +11,7 @@ public class Car {
     //  be initialized first, before the initialization of
     //  any instance variables
 
-    //  -> A single copy to be shared by all instances of 
+    //  -> A single copy to be shared by all instances of
     //  the class
 
     public static int numberOfCars;
