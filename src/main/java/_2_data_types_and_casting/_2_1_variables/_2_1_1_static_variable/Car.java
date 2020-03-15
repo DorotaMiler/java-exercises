@@ -4,12 +4,22 @@ public class Car {
     private String make;
     private String engine;
 
+    // ->  will get memory only once and retain its value
+
+    //  -> Static variables are initialized only once, at
+    //  the start of the execution. These variables will
+    //  be initialized first, before the initialization of
+    //  any instance variables
+
+    //  -> A single copy to be shared by all instances of 
+    //  the class
+
     public static int numberOfCars;
 
     public Car(String make, String engine) {
         this.make = make;
         this.engine = engine;
-        numberOfCars++;
+        numberOfCars++;  //incrementing the value of static variable
     }
 
     public String getEngine() {
