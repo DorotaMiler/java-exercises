@@ -18,4 +18,8 @@ public class NewEnclosingClass {
         lc.addMembers();
     }
 
+    //  local classes allow to modify and access the class
+    //  constructor - an important distinction to
+    //  anonymous classes
+
 }
