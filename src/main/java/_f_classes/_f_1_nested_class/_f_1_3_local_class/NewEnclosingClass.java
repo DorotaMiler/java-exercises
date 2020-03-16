@@ -7,7 +7,7 @@ public class NewEnclosingClass {
 
     void addCounts(){
 
-        // You typically find local classes defined in the
+        // -> You typically find local classes defined in the
         // body of a method.
         class LocalClass{
             void addMembers(){
