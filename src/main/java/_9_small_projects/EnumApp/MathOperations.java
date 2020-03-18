@@ -15,7 +15,12 @@ public enum MathOperations {
     }
 
     public viewMathOpearations() {
-        System.out.println("Available math operations (in enum form): \n");
-        System.out.println();
+        System.out.println("------------------------------------------------------");
+        System.out.println("-----  Available math operations (in enum form): -----\n");
+        System.out.println("***    1. Add ( + )                                ***");
+        System.out.println("***    1. Substract ( - )                          ***");
+        System.out.println("***    1. Add ( * )                                ***");
+        System.out.println("***    1. Add ( / )                                 ***");
+        System.out.println(--------------------------------------------------------);
     }
 }
