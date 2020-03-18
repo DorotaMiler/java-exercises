@@ -21,7 +21,7 @@ public class SwitchStatement {
         switch (choice) {
             case 1:
                 System.out.println("Options menu: ");
-                break;  /* breas causes to stop the case block
+                break;  /* break causes to stop the case block
                 otherwise all below 3 options would be executed as well
                 */
             case 2:
