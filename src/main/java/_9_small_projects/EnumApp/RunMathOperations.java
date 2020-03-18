@@ -16,23 +16,27 @@ public class RunMathOperations {
 
     public void chooseMathOperation() {
         System.out.println("Please choose from the below available 4 options:");
-        viewMathOpearations();
-        int chosenOption = getConsoleInput();
-        switch (chosenOption) {
-            case 1:
-                System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
-                break;
-            case 2:
-                System.out.println("Choice confirmation: " + MathOperations.SUBSTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBSTRACT.getSign());
-                break;
-            case 3:
-                System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());
-                break;
-            case 4:
-                System.out.println("Choice confirmation: " + MathOperations.DEVIDE.getOptionNumber() + " implies -> " + MathOperations.DEVIDE.getSign());
-                break;
-            default:
-                System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 -4)");
+        boolean isCorrectOption = false;
+        while (!isCorrectOption) {
+            viewMathOpearations();
+            int chosenOption = getConsoleInput();
+
+            switch (chosenOption) {
+                case 1:
+                    System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
+                    break;
+                case 2:
+                    System.out.println("Choice confirmation: " + MathOperations.SUBSTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBSTRACT.getSign());
+                    break;
+                case 3:
+                    System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());
+                    break;
+                case 4:
+                    System.out.println("Choice confirmation: " + MathOperations.DEVIDE.getOptionNumber() + " implies -> " + MathOperations.DEVIDE.getSign());
+                    break;
+                default:
+                    System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 - 4)");
+            }
         }
     }
 
