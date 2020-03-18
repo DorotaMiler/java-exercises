@@ -13,4 +13,12 @@ public enum MathOperations {
         this.optionNumber = optionNumber;
         this.sign = sign;
     }
+
+    public Integer getOptionNumber() {
+        return optionNumber;
+    }
+
+    public String getSign() {
+        return sign;
+    }
 }
