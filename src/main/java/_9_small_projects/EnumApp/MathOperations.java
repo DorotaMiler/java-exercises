@@ -6,8 +6,8 @@ public enum MathOperations {
     MULTIPLY(3, "*"),
     DEVIDE(4, "/");
 
+    public Integer optionNumber;
     private String sign;
-    private Integer optionNumber;
 
     MathOperations(Integer optionNumber, String sign) {
         this.optionNumber = optionNumber;
