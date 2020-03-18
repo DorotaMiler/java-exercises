@@ -29,8 +29,7 @@ public enum MathOperations {
     public void chooseMathOperation() {
         System.out.println("Please choose from the below available 4 options:");
         viewMathOpearations();
-        Scanner scan = new Scanner(System.in);
-        int chosenOption = scan.nextInt();
+     int chosenOption = getConsoleInput();
         switch (chosenOption) {
             case 1:
                 System.out.println("Choice confirmation: " + MathOperations.ADD.optionNumber + " implies -> " + MathOperations.ADD.sign);
@@ -47,5 +46,11 @@ public enum MathOperations {
             default:
                 System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 -4)");
         }
+    }
+
+    public int getConsoleInput(){
+        Scanner scan = new Scanner(System.in);
+        int chosenOption = scan.nextInt();
+        return chosenOption;
     }
 }
