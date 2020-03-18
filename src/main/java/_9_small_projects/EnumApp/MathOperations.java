@@ -6,7 +6,7 @@ public enum MathOperations {
     MULTIPLY(3, "*"),
     DEVIDE(4, "/");
 
-    public Integer optionNumber;
+    private Integer optionNumber;
     private String sign;
 
     MathOperations(Integer optionNumber, String sign) {

@@ -20,16 +20,16 @@ public class RunMathOperations {
         int chosenOption = getConsoleInput();
         switch (chosenOption) {
             case 1:
-                System.out.println("Choice confirmation: " + MathOperations.ADD.optionNumber + " implies -> " + MathOperations.ADD.sign);
+                System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
                 break;
             case 2:
-                System.out.println("Choice confirmation: " + MathOperations.SUBSTRACT.optionNumber + " implies -> " + MathOperations.SUBSTRACT.sign);
+                System.out.println("Choice confirmation: " + MathOperations.SUBSTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBSTRACT.getSign());
                 break;
             case 3:
-                System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.optionNumber + " implies -> " + MathOperations.MULTIPLY.sign);
+                System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());
                 break;
             case 4:
-                System.out.println("Choice confirmation: " + MathOperations.DEVIDE.optionNumber + " implies -> " + MathOperations.DEVIDE.sign);
+                System.out.println("Choice confirmation: " + MathOperations.DEVIDE.getOptionNumber() + " implies -> " + MathOperations.DEVIDE.getSign());
                 break;
             default:
                 System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 -4)");
