@@ -21,6 +21,6 @@ public enum MathOperations {
         System.out.println("***    1. Substract ( - )                          ***");
         System.out.println("***    1. Add ( * )                                ***");
         System.out.println("***    1. Add ( / )                                 ***");
-        System.out.println(--------------------------------------------------------);
+        System.out.println("-------------------------------------------------------");
     }
 }
