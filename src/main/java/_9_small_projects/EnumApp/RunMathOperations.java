@@ -22,6 +22,8 @@ public class RunMathOperations {
             int chosenOption = getConsoleInput();
 
             switch (chosenOption) {
+                case 0:
+                    break;
                 case 1:
                     System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
                     break;
