@@ -8,9 +8,9 @@ public class RunMathOperations {
         System.out.println("------------------------------------------------------");
         System.out.println("-----  Available math operations (in enum form): -----\n");
         System.out.println("***    1. Add ( + )                                ***");
-        System.out.println("***    1. Substract ( - )                          ***");
-        System.out.println("***    1. Multiply ( * )                           ***");
-        System.out.println("***    1. Devide ( / )                             ***");
+        System.out.println("***    2. Substract ( - )                          ***");
+        System.out.println("***    3. Multiply ( * )                           ***");
+        System.out.println("***    4. Devide ( / )                             ***");
         System.out.println("-------------------------------------------------------");
     }
 
@@ -37,6 +37,7 @@ public class RunMathOperations {
                 default:
                     System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 - 4)");
             }
+            isCorrectOption = (chosenOption >= 5 || chosenOption < 0) ? false : true;
         }
     }
 
