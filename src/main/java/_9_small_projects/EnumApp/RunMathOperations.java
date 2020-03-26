@@ -28,7 +28,7 @@ public class RunMathOperations {
                     System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
                     break;
                 case 2:
-                    System.out.println("Choice confirmation: " + MathOperations.SUBSTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBSTRACT.getSign());
+                    System.out.println("Choice confirmation: " + MathOperations.SUBTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBTRACT.getSign());
                     break;
                 case 3:
                     System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());

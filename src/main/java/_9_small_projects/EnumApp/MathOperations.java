@@ -2,7 +2,7 @@ package _9_small_projects.EnumApp;
 
 public enum MathOperations {
     ADD(1, "+"),
-    SUBSTRACT(2, "-"),
+    SUBTRACT(2, "-"),
     MULTIPLY(3, "*"),
     DEVIDE(4, "/");
 
