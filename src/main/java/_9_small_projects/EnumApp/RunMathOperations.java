@@ -14,32 +14,37 @@ public class RunMathOperations {
         System.out.println("-------------------------------------------------------");
     }
 
-    public void chooseMathOperation() {
+    public void chooseMathOperation() throws ZeroValueException {
         System.out.println("Please choose from the below available 4 options:");
         boolean isCorrectOption = false;
         while (!isCorrectOption) {
-            viewMathOpearations();
             int chosenOption = getConsoleInput();
 
-            switch (chosenOption) {
-                case 0:
+            try {
+                viewMathOpearations();
+                switch (chosenOption) {
+                    case 0:
+                        break;
+                    case 1:
+                        System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
+                        break;
+                    case 2:
+                        System.out.println("Choice confirmation: " + MathOperations.SUBTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBTRACT.getSign());
+                        break;
+                    case 3:
+                        System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());
+                        break;
+                    case 4:
+                        System.out.println("Choice confirmation: " + MathOperations.DEVIDE.getOptionNumber() + " implies -> " + MathOperations.DEVIDE.getSign());
+                        break;
+                    default:
+                        System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 - 4)");
+                } catch(ZeroValueException e){
+                    System.out.println("0 input value. Program termination.");
                     break;
-                case 1:
-                    System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
-                    break;
-                case 2:
-                    System.out.println("Choice confirmation: " + MathOperations.SUBTRACT.getOptionNumber() + " implies -> " + MathOperations.SUBTRACT.getSign());
-                    break;
-                case 3:
-                    System.out.println("Choice confirmation: " + MathOperations.MULTIPLY.getOptionNumber() + " implies -> " + MathOperations.MULTIPLY.getSign());
-                    break;
-                case 4:
-                    System.out.println("Choice confirmation: " + MathOperations.DEVIDE.getOptionNumber() + " implies -> " + MathOperations.DEVIDE.getSign());
-                    break;
-                default:
-                    System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 - 4)");
+                }
+                isCorrectOption = (chosenOption >= 5 || chosenOption < 0) ? false : true;
             }
-            isCorrectOption = (chosenOption >= 5 || chosenOption < 0) ? false : true;
         }
     }
 
