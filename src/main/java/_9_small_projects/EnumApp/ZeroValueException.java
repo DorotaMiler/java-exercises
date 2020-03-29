@@ -5,6 +5,11 @@ package _9_small_projects.EnumApp;
  */
 
 public class ZeroValueException extends Exception{
+    int limit;
+
+    public ZeroValueException(int limit){
+        this.limit = limit;
+    }
     public ZeroValueException(String message){
         RunMathOperations run = RunMathOperations();
         if(run.chosenOption){
