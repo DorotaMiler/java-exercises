@@ -4,17 +4,15 @@ package _9_small_projects.EnumApp;
  * Custom exception class
  */
 
-public class ZeroValueException extends Exception{
-    int limit;
+public class ZeroValueException extends Exception {
+    int notAcceptedValue;
 
-    public ZeroValueException(int limit){
-        this.limit = limit;
+    public ZeroValueException(int notAcceptedValue) {
+        this.notAcceptedValue = notAcceptedValue;
     }
-    public ZeroValueException(String message){
-        RunMathOperations run = RunMathOperations();
-        if(run.chosenOption){
-            throw new ZeroValueException("Zero value -> program termination :(");
-        }
-        super(message);
+
+
+    public String toString(){
+        return "CustomZeroValueException [" + notAcceptedValue + " ]";
     }
 }

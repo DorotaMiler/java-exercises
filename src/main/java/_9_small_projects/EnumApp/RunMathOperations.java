@@ -40,15 +40,24 @@ public class RunMathOperations {
                         System.out.println("Chosen option incorrect -> please try again (choose integer ranging from 1 - 4)");
                 }
                 isCorrectOption = (chosenOption >= 5 || chosenOption < 0) ? false : true;
+
             } catch (ZeroValueException e) {
                 throw new ZeroValueException("Zero value -> program termination :(");
             }
         }
     }
 
-    public int getConsoleInput() {
-        Scanner scan = new Scanner(System.in);
-        int chosenOption = scan.nextInt();
-        return chosenOption;
+        public void evaluateValue () throws ZeroValueException {
+            if (chosenOption == 0)
+                throw new ZeroValueException(chosenOption);
+            else {
+                System.out.println("No error in program. No exception caught.");
+            }
+        }
+
+        public int getConsoleInput () {
+            Scanner scan = new Scanner(System.in);
+            int chosenOption = scan.nextInt();
+            return chosenOption;
+        }
     }
-}

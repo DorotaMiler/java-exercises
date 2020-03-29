@@ -8,6 +8,6 @@ public class LimitException extends Exception {
     }
 
     public String toString() {
-        return "CustomException[" + limit + " ]";
+        return "CustomException [" + limit + " ]";
     }
 }
