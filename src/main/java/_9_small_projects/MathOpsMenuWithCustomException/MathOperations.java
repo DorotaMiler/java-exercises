@@ -1,4 +1,4 @@
-package _9_small_projects.EnumApp;
+package _9_small_projects.MathOpsMenuWithCustomException;
 
 public enum MathOperations {
     ADD(1, "+"),
