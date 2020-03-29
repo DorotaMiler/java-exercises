@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // below Animal as reference; Dog as an abject implication
         Animal dog = new Dog("Reksio");
+        // or invoking could happen by using just-> new Dog();
         dog.printName();
         dog.move();
     }

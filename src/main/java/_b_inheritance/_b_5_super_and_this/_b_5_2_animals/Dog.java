@@ -1,13 +1,18 @@
 package _b_inheritance._b_5_super_and_this._b_5_2_animals;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
-    Dog(String name){
+    Dog(String name) {
         super(name);
     }
 
-    Dog(){
+    Dog() {
+        this(4);
         this("test");
+    }
+
+    Dog(int legs) {
+        System.out.println("Dog has " + legs + " legs.");
     }
 
     @Override
