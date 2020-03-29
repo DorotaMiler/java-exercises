@@ -1,4 +1,8 @@
 package _9_small_projects.CardsApp;
 
-public class Rank {
+public enum Rank {
+    ACE,
+    KING,
+    QUEEN,
+    JACK;
 }

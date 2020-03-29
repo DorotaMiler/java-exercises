@@ -1,4 +1,8 @@
 package _9_small_projects.CardsApp;
 
-public class Suit {
+public enum Suit {
+    CLUBS,
+    DIAMONDS,
+    HEARTS,
+    SPADES;
 }
