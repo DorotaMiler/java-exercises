@@ -1,4 +1,4 @@
-package _f_classes._f_1_nested_class._f_5_static_block;
+package _f_classes._f_1_nested_class._f_1_5_static_block;
 
 import java.util.LinkedList;
 import java.util.List;
