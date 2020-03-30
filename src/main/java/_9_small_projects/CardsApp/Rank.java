@@ -12,7 +12,7 @@ public enum Rank {
         return rank;
     }
 
-    Rank(String rank){
+    Rank(String rank) {
         this.rank = rank;
     }
 }
