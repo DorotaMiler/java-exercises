@@ -1,5 +1,7 @@
 package _9_small_projects.CardsApp;
 
+import java.util.Scanner;
+
 public class Card {
     private Rank rank;
     private Suit suit;
@@ -41,6 +43,17 @@ public class Card {
         System.out.println("------------------------------------------------------------");
     }
 
+public int scanChoice(){
+        Scanner scan = new Scanner(System.in);
+        int chosenOption = scan.nextInt();
+        return chosenOption;
+}
 
-
+@Override
+    public String toString() {
+        return Suit.
+                "ran=" + size +
+                ", manufacturer='" + manufacturer + '\'' +
+                '}';
+    }
 }
