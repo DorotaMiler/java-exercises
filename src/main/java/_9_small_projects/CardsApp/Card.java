@@ -32,38 +32,42 @@ public class Card {
             switch (firstChoice) {
                 case 1:
                     return Suit.CLUBS.name();
-                    break;
+                break;
                 case 2:
                     return Suit.DIAMONDS.name();
-                    break;
+                break;
                 case 3:
                     return Suit.HEARTS.name();
-                    break;
+                break;
                 case 4:
                     return Suit.SPADES.name();
-                    break;
-
+                break;
             }
         }
         return (rank.toString() + " - " + suit.name().)
     }
 
-
     getRankChoice() {
         rankMenu();
-        int secondChoice = scanChoice();
         boolean isCorrect = true;
         while (isCorrect) {
-
-
-            swich(secondChoice) {
+            int secondChoice = scanChoice();
+            switch (secondChoice) {
                 case 1:
-
+                    return Rank.ACE.name();
+                break;
+                case 2:
+                    return Rank.KING.name();
+                break;
+                case 3:
+                    return Rank.QUEEN.name();
+                break;
+                case 4:
+                    return Rank.JACK.name();
+                break;
             }
-
+            return (rank.toString() + " - " + rank.name().)
         }
-        return (rank.toString() + " - " + suit.name().)
-
     }
 
     public void suitMenu() {
