@@ -17,7 +17,7 @@ public class Card {
 
     }
 
-    public void menu() {
+    public void rankChoice() {
         System.out.println("Please follow below instructions:\n");
         System.out.println("--------------------------------------------------------");
         System.out.println("-----  Please choose one suit from below 4 options:-----\n");
