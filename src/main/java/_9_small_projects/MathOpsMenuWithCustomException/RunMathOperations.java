@@ -23,6 +23,9 @@ public class RunMathOperations {
         while (!isCorrectOption) {
             chosenOption = getConsoleInput();
             switch (chosenOption) {
+                case 0:
+                    evaluateValue();
+                    break;
                 case 1:
                     System.out.println("Choice confirmation: " + MathOperations.ADD.getOptionNumber() + " implies -> " + MathOperations.ADD.getSign());
                     break;
@@ -43,17 +46,17 @@ public class RunMathOperations {
         }
     }
 
-        public void evaluateValue () throws ZeroValueException {
-            if (chosenOption == 0)
-                throw new ZeroValueException(chosenOption);
-            else {
-                System.out.println("No error in program. No exception caught.");
-            }
-        }
-
-        public int getConsoleInput () {
-            Scanner scan = new Scanner(System.in);
-            int chosenOption = scan.nextInt();
-            return chosenOption;
-        }
+    public void evaluateValue() throws ZeroValueException {
+        if (chosenOption == 0)
+            throw new ZeroValueException(chosenOption);
+//            else {
+//                System.out.println("No error in program. No exception caught.");
+//            }
     }
+
+    public int getConsoleInput() {
+        Scanner scan = new Scanner(System.in);
+        int chosenOption = scan.nextInt();
+        return chosenOption;
+    }
+}

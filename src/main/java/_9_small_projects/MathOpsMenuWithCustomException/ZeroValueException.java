@@ -15,10 +15,10 @@ public class ZeroValueException extends Exception {
 
     public ZeroValueException(int notAcceptedValue) {
         this.notAcceptedValue = notAcceptedValue;
+
     }
 
-
-    public String toString(){
+    public String toString() {
         return "CustomZeroValueException [" + notAcceptedValue + " ]";
     }
 }
