@@ -57,6 +57,7 @@ public class Card {
                     return Rank.ACE.name();
                 break;
                 case 2:
+                case 2:
                     return Rank.KING.name();
                 break;
                 case 3:
