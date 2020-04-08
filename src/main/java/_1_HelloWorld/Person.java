@@ -8,7 +8,7 @@ Creation of a class containing:
 equals() & hashcode()
  */
 
-import static jdk.nashorn.internal.objects.NativeString.substring;
+import java.util.Objects;
 
 public class Person {
     String name;
@@ -16,11 +16,11 @@ public class Person {
     String pesel;
 
     public Person(byte age) {
-        pesel ="";
+        pesel = "";
         this.age = age;
     }
 
-    public Person(byte age, String pesel){
+    public Person(byte age, String pesel) {
         this.age = age;
         this.pesel = pesel;
     }
@@ -35,11 +35,11 @@ public class Person {
         System.out.println("You are " + name + " and you are " + age + " years old");
     }
 
-    public String getMonth(){
-        return pesel.substring(2,3);
+    public String getMonth() {
+        return pesel.substring(2, 3);
     }
 
-    public boolean isPeselValid(){
+    public boolean isPeselValid() {
         return !pesel.isEmpty();
     }
 
@@ -57,5 +57,30 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Person{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", pesel='").append(pesel).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                getName().equals(person.getName()) &&
+                getPesel().equals(person.getPesel());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), age, getPesel());
     }
 }
