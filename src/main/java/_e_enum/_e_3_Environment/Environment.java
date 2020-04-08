@@ -7,11 +7,19 @@ public enum Environment {
     DEV("https://dev.domain.com:21323/");
 
     private String url;
-    Environment(String url){
+
+    Environment(String url) {
         this.url = url;
     }
 
     public String getUrl() {
         return url;
+    }
+
+    // values() -> iteration over enum's list
+    public void iterate() {
+        for (Environment environment : Environment.values()) {
+            System.out.println(environment.name() + " : : " + environment.getUrl());
+        }
     }
 }
