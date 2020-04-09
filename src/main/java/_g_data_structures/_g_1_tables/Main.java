@@ -14,17 +14,23 @@ public class Main {
         c[2] = "ma";
         c[4] = "kota";
 
-        public void fillAValues() {
-            for (var i = 0; i < 100; i++) {
+        public void fillAValues () {
+            for (var i = 0; i < a.length; i++) {
                 a[i] = i;
                 System.out.println(a[i]);
             }
         }
 
-        public void fillCValues() {
-            for (var i = 0; i < 5; i++) {
-                c[i] = i;
-                System.out.println(c[i]);
+//        public void fillCValues() {
+//            for (var i = 0; i < c.length; i++) {
+//                c[i] = i;
+//                System.out.println(c[i]);
+//            }
+//        }
+
+        public void fillCValues () {
+            for (var element : c) {
+                System.out.println(element);
             }
         }
     }
