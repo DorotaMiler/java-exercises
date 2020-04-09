@@ -33,5 +33,15 @@ public class Main {
                 System.out.println(element);
             }
         }
+
+        String[] names = {"Dorota", "Ania", "Lukasz"};
+
+        int[][] tab = new int[3][3];
+
+        for (int i = 0; i < tab.length; i++) {
+            for (int k = 0; k < tab[0].length; k++) {
+                tab[i][k] = i + k;
+            }
+        }
     }
 }
