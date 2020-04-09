@@ -43,5 +43,11 @@ public class Main {
                 tab[i][k] = i + k;
             }
         }
+
+        for (int i = 0; i < tab.length; i++) {
+            for (int k = 0; k < tab[i].length; k++) {
+                System.out.println("tab[" + i + "][" + k + "] = " + tab[i][k]);
+            }
+        }
     }
 }
