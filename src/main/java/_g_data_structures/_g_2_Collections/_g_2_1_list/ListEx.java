@@ -34,4 +34,16 @@ public class ListEx {
         System.out.println(list1.get(0));  //  0 is an index
         System.out.println(list1.get(3));
     }
+
+//    add & addAll - addin elements to the end of list
+//    clear - clearing allelements
+//    remove & removeAll - removing elements
+//    isEmpty - check if list is empty
+//    size - check size
+//    set - exchange of one elemnt to another
+//    sort - sorting a list
+//    toArray - change to a table
+//    indexOf​ - displaying a position f requested element
+
+    
 }
