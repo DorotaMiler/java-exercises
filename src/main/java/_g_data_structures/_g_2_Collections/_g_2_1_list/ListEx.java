@@ -17,20 +17,20 @@ public class ListEx {
 
     list1.addAll(list2);
 
-    List<Integer> list3= new LinkedList<>();
+    List<Integer> list3 = new LinkedList<>();
     list3.add(2,3);
-    list3.add(0, 7890);
+    list3.add(0,7890);
 
     list1.addAll(1,list3);  // starting from second position ->
-                            // list  added to list1
+    // list  added to list1
 
-   public void  displayList1Value(){
-        for(var element:lis1){
+    public void displayList1Value() {
+        for (var element : lis1) {
             System.out.println(element);
         }
     }
 
-    public static displayPreciseValue(){
+    public static displayPreciseValue() {
         System.out.println(list1.get(0));  //  0 is an index
         System.out.println(list1.get(3));
     }
@@ -45,5 +45,21 @@ public class ListEx {
 //    toArray - change to a table
 //    indexOf​ - displaying a position f requested element
 
-    
+    List<Integer> collection1 = new ArrayList<>();
+    List<Integer> collection2 = new LinkedList<>();
+
+    collection1.add(1);
+    collection1.add(2);
+    collection1.add(3);
+
+    collection2.add(4);
+    collection2.add(0,10);
+    collection1.addAll(2,collection2);
+
+    public static printOutElements() {
+        System.out.println("Elements are: \n");
+        for (var element : collection1) {
+            System.out.println(element);
+        }
+    }
 }
