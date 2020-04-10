@@ -17,4 +17,6 @@ public class VarEx {
         var fileR = new FileReader("plik.txt");
         var reader = new BufferedReader(fileR);
     }
+
+
 }

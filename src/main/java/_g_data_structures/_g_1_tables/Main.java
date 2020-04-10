@@ -28,7 +28,7 @@ public class Main {
 //            }
 //        }
 
-        public void fillCValues () {
+        public void prinetCValues () {
             for (var element : c) {
                 System.out.println(element);
             }
@@ -39,7 +39,7 @@ public class Main {
         int[][] tab = new int[3][3];
 
         for (int i = 0; i < tab.length; i++) {
-            for (int k = 0; k < tab[0].length; k++) {
+            for (int k = 0; k < tab[i].length; k++) {
                 tab[i][k] = i + k;
             }
         }

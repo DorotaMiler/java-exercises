@@ -9,4 +9,6 @@ public class TableEx {
         System.out.println("Element nr 0 from c table is: "+c[0]);
     }
 
+
+
 }
