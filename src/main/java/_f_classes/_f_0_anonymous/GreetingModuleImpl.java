@@ -1,6 +1,6 @@
 package _f_classes._f_0_anonymous;
 
-public class GreetingModuleImpl implements GreetingModule{
+//public class GreetingModuleImpl implements GreetingModule{
 //   public void someMethod(){
 //       GreetingModule greeting = new GreetingModule() {
 //           @Override
@@ -9,4 +9,4 @@ public class GreetingModuleImpl implements GreetingModule{
 //           }
 //       }
 //   }
-}
+//}

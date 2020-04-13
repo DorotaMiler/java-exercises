@@ -4,7 +4,7 @@ public interface Calculator<T> {
     double PI = 3.14159;
 
     double add(T... args);
-    double subtract(T... args):
-    double multiply(T... args):
-    double divide(T... args):
+    double subtract(T... args);
+    double multiply(T... args);
+    double divide(T... args);
 }

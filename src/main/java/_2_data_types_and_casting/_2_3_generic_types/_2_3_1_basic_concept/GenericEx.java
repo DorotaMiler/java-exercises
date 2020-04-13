@@ -21,11 +21,11 @@ public class GenericEx<T> {
         return a.doubleValue() + b.doubleValue();
     }
 
-    public <T extends Number> double add(T... numbers) {
-        double result;
-        for (T number : numbers) {
-            result += number.doubleValue();
-        }
-        return result;
-    }
+//    public <T extends Number> double add(T... numbers) {
+//        double result;
+//        for (T number : numbers) {
+//            result += number.doubleValue();
+//        }
+//        return result;
+//    }
 }

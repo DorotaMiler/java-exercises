@@ -26,5 +26,4 @@ public class Connection {
     public String getUserName() {
         return userName;
     }
-
 }
