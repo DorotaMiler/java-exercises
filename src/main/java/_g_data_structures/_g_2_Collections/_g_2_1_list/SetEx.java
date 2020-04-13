@@ -42,4 +42,14 @@ public class SetEx {
     }
 
     //  * LinkedHashSet remembers order of adding each element
+    //    * boolean add(E e) - adds unique elemnt to set, in case element is
+    //    repeated, adding is ignored. Uniquality is checked thanks to
+    //    methods: hashCode() & equals().
+    //    One null value possible to be added to Set
+    //    * boolean contains(Object o) - checks if "o" object is in Set
+    //    * boolean isEmpty() - checks if Set is empty
+    //    * Iterator iterator() - returns iterator; sequence of
+    //    elements dependent on utilized implementation
+    //    * boolean remove(Object o) - removes "o" element from Set
+    //    * int size() - displays amount of Set's elements
 }
