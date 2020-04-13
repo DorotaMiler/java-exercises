@@ -5,34 +5,47 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ListEx {
-    // .add adds at the end of a list
-    List<Integer> list1 = new ArrayList<>();
-    list1.add(5);
-    list1.add(4567);
-    list1.add(-87);
+    public static void main(String[] args) {
 
-    List<Integer> list2 = new ArrayList<>();
-    list2.add(35);
-    list2.add(-6);
+        // .add adds at the end of a list
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(5);
+        list1.add(4567);
+        list1.add(-87);
 
-    list1.addAll(list2);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(35);
+        list2.add(-6);
 
-    List<Integer> list3 = new LinkedList<>();
-    list3.add(2,3);
-    list3.add(0,7890);
+        list1.addAll(list2);
 
-    list1.addAll(1,list3);  // starting from second position ->
-    // list  added to list1
+        List<Integer> list3 = new LinkedList<>();
+        list3.add(2, 3);
+        list3.add(0, 7890);
 
-    public void displayList1Value() {
-        for (var element : lis1) {
+        list1.addAll(1, list3);  // starting from second position ->
+        // list  added to list1
+        List<Integer> collection1 = new ArrayList<>();
+        List<Integer> collection2 = new LinkedList<>();
+
+        collection1.add(-90);
+        collection1.add(2);
+        collection1.add(3);
+
+        collection2.add(4);
+        collection2.add(0, 10);
+        collection1.addAll(2, collection2);
+    }
+
+    public void displayListValue(List list) {
+        for (var element : list) {
             System.out.println(element);
         }
     }
 
-    public static displayPreciseValue() {
-        System.out.println(list1.get(0));  //  0 is an index
-        System.out.println(list1.get(3));
+    public void displayPreciseValue(List list) {
+        System.out.println(list.get(0));  //  0 is an index
+        System.out.println(list.get(3));
     }
 
 //    add & addAll - addin elements to the end of list
@@ -45,21 +58,11 @@ public class ListEx {
 //    toArray - change to a table
 //    indexOf​ - displaying a position f requested element
 
-    List<Integer> collection1 = new ArrayList<>();
-    List<Integer> collection2 = new LinkedList<>();
-
-    collection1.add(1);
-    collection1.add(2);
-    collection1.add(3);
-
-    collection2.add(4);
-    collection2.add(0,10);
-    collection1.addAll(2,collection2);
-
-    public static printOutElements() {
+    public void printOutElements(List collection) {
         System.out.println("Elements are: \n");
-        for (var element : collection1) {
+        for (var element : collection) {
             System.out.println(element);
         }
     }
+
 }

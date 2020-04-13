@@ -14,28 +14,7 @@ public class Main {
         c[2] = "ma";
         c[4] = "kota";
 
-        public void fillAValues () {
-            for (var i = 0; i < a.length; i++) {
-                a[i] = i;
-                System.out.println(a[i]);
-            }
-        }
-
-//        public void fillCValues() {
-//            for (var i = 0; i < c.length; i++) {
-//                c[i] = i;
-//                System.out.println(c[i]);
-//            }
-//        }
-
-        public void prinetCValues () {
-            for (var element : c) {
-                System.out.println(element);
-            }
-        }
-
         String[] names = {"Dorota", "Ania", "Lukasz"};
-
         int[][] tab = new int[3][3];
 
         for (int i = 0; i < tab.length; i++) {
@@ -50,4 +29,24 @@ public class Main {
             }
         }
     }
-}
+
+        public void fillAValue(int a[]) {
+            for (var i = 0; i < a.length; i++) {
+                a[i] = i;
+                System.out.println(a[i]);
+            }
+        }
+
+//        public void fillCValues() {
+//            for (var i = 0; i < c.length; i++) {
+//                c[i] = i;
+//                System.out.println(c[i]);
+//            }
+//        }
+
+        public void prinetCValues (String[]c) {
+            for (var element : c) {
+                System.out.println(element);
+            }
+        }
+    }
