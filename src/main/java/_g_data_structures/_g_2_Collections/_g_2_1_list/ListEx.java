@@ -35,6 +35,8 @@ public class ListEx {
         collection2.add(4);
         collection2.add(0, 10);
         collection1.addAll(2, collection2);
+
+
     }
 
     public void displayListValue(List list) {

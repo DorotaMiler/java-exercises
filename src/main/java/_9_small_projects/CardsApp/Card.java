@@ -15,12 +15,12 @@ public class Card {
         return suit;
     }
 
-    public String getDescription(Rank rank, Suit suit) {
-
-        StringJoiner joiner = new StringJoiner(" - ", "{", "}");
-        String result = joiner.add("Dorota").add("is").add("ill").add("and").add("stays").add("home").toString();
-        System.out.println(result);
-    }
+//    public String getDescription(Rank rank, Suit suit) {
+//
+//        StringJoiner joiner = new StringJoiner(" - ", "{", "}");
+//        String result = joiner.add("Dorota").add("is").add("ill").add("and").add("stays").add("home").toString();
+//        System.out.println(result);
+//    }
 
 
 //    public String suitChoice() {

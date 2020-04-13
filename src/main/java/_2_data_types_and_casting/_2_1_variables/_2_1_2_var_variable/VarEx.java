@@ -13,10 +13,10 @@ public class VarEx {
     * only as a LOCAL variable
     */
 
-    public void readFile() {
-        var fileR = new FileReader("plik.txt");
-        var reader = new BufferedReader(fileR);
-    }
+//    public void readFile() {
+//        var fileR = new FileReader("plik.txt");
+//        var reader = new BufferedReader(fileR);
+//    }
 
 
 }
