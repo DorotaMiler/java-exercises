@@ -12,19 +12,27 @@ public class ListEx {
         list1.add(5);
         list1.add(4567);
         list1.add(-87);
+        System.out.println("\n 1st -> list display: ");
+        displayListValue(list1);
 
         List<Integer> list2 = new ArrayList<>();
         list2.add(35);
         list2.add(-6);
 
         list1.addAll(list2);
+        System.out.println("\n 2nd -> list modification: ");
+        displayListValue(list1);
 
         List<Integer> list3 = new LinkedList<>();
-        list3.add(2, 3);
+        list3.add(3);
         list3.add(0, 7890);
 
         list1.addAll(1, list3);  // starting from second position ->
         // list  added to list1
+        System.out.println("\n 3rd -> list modification: ");
+        displayListValue(list1);
+
+
         List<Integer> collection1 = new ArrayList<>();
         List<Integer> collection2 = new LinkedList<>();
 
@@ -35,11 +43,10 @@ public class ListEx {
         collection2.add(4);
         collection2.add(0, 10);
         collection1.addAll(2, collection2);
-
-
     }
 
-    public void displayListValue(List list) {
+    public static void displayListValue(List list) {
+        System.out.println("Display of elements: \n");
         for (var element : list) {
             System.out.println(element);
         }
