@@ -8,6 +8,8 @@ public class ListEx {
     public static void main(String[] args) {
 
         // .add adds at the end of a list
+
+        // 1st ex
         List<Integer> list1 = new ArrayList<>();
         list1.add(5);
         list1.add(4567);
@@ -32,7 +34,7 @@ public class ListEx {
         System.out.println("\n 3rd -> list modification: ");
         displayListValue(list1);
 
-
+        // 2nd ex
         List<Integer> collection1 = new ArrayList<>();
         List<Integer> collection2 = new LinkedList<>();
 
@@ -42,7 +44,9 @@ public class ListEx {
 
         collection2.add(4);
         collection2.add(0, 10);
-        collection1.addAll(2, collection2);
+        collection1.addAll(1, collection2);
+
+        displayPreciseValue(collection1);
     }
 
     public static void displayListValue(List list) {
@@ -52,7 +56,8 @@ public class ListEx {
         }
     }
 
-    public void displayPreciseValue(List list) {
+    public static void displayPreciseValue(List list) {
+        System.out.println("Display of elements of 0 & 3rd index: \n");
         System.out.println(list.get(0));  //  0 is an index
         System.out.println(list.get(3));
     }
@@ -73,5 +78,4 @@ public class ListEx {
             System.out.println(element);
         }
     }
-
 }
