@@ -47,6 +47,7 @@ public class ListEx {
         collection1.addAll(1, collection2);
 
         displayPreciseValue(collection1);
+        System.out.println(".get 4th index number: "+ collection1.get(4));
     }
 
     public static void displayListValue(List list) {
