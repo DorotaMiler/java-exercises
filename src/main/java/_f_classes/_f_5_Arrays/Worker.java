@@ -5,10 +5,10 @@ public class Worker {
     private String lastName;
     private double payout;
 
-    public Worker(String name, String lastName, double payout){
-        this.name=name;
+    public Worker(String name, String lastName, double payout) {
+        this.name = name;
         this.lastName = lastName;
-        this.payout=payout;
+        this.payout = payout;
     }
 
     public String getName() {
