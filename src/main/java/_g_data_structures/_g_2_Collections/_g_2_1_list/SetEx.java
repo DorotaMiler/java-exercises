@@ -8,6 +8,7 @@ public class SetEx {
 
     public static void main(String[] args) {
 
+        // ex1
         //  unique elements + sorted elements guaranteed -> TreeSet
         Set<Integer> set1 = new TreeSet<>();
 
@@ -31,6 +32,23 @@ public class SetEx {
         set1.addAll(set2);
         System.out.println("Set1 after .addAll(): ");
         displayelements(set1);
+
+        // ex2
+        Set<String> names = new TreeSet<>();
+        names.add("Kate");
+        names.add("Dorothy");
+        names.add("Ann");
+        names.add("Peter");
+        names.add("Kate");
+        names.add("Thomas");
+        names.add("Kate");
+
+        int printSize = names.size();
+        System.out.println("Number of unique names in the set: " + printSize);
+        System.out.println("Check if Set called 'names' is empty: " + names.isEmpty());
+        boolean isThereAnn = names.contains("Ann");
+        System.out.println("Is there Ann in the set: " + isThereAnn);
+        displayelements(names);
     }
 
     public static void displayelements(Set set) {
