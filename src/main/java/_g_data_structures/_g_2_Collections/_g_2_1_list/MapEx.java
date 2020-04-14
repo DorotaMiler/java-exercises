@@ -6,6 +6,13 @@ import java.util.TreeMap;
 public class MapEx {
     public static void main(String[] args) {
         Map<Integer, String> employees = new TreeMap<>();
-        employees.put(11,"DorotaMiler");
+        employees.put(11,"Dorota Miler");
+        employees.put(22,"Reggie Tyler");
+        employees.put(66,"Dennis Pommn");
+        employees.put(55,"Goerge Fillis");
+        employees.put(44,"Dorota Miler");
+        employees.put(33,"Thomas Key");
+
+        System.out.println("Size of a map -> employees: "+employees.size());
     }
 }
