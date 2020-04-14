@@ -49,6 +49,8 @@ public class SetEx {
         boolean isThereAnn = names.contains("Ann");
         System.out.println("Is there Ann in the set: " + isThereAnn);
         displayelements(names);
+        names.clear();
+        System.out.println("Number of names' set elements: " + names.size());
     }
 
     public static void displayelements(Set set) {
