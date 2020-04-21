@@ -15,17 +15,20 @@ construction process can create different representations.”
 import java.util.Objects;
 
 public class Person {
-    private String firstName;
-    private String lastName;
-    private byte age;
-    private String pesel;
-    private String phone;
-    private String address;
+
+    // only final attributes
+    private final String firstName;
+    private final String lastName;
+    private final byte age;
+    private final String pesel;
+    private final String phone;
+    private final String address;
 
     private Person(PersonBuilder builder) {
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.age = builder.age;
+        this.pesel = builder.pesel;
         this.phone = builder.phone;
         this.address = builder.address;
     }
@@ -34,8 +37,29 @@ public class Person {
         System.out.println("You are " + name + " and you are " + age + " years old");
     }
 
+    // Only getters, n setters to provide immutability
     public String getMonth() {
         return pesel.substring(2, 3);
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public byte getAge() {
+        return age;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }return pesel;
+
+    public String getPhone() {
+        return phone;
     }
 
     public boolean isPeselValid() {
@@ -44,10 +68,6 @@ public class Person {
 
     public String getPesel() {
         return pesel;
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override
@@ -79,4 +99,42 @@ public class Person {
     public int hashCode() {
         return Objects.hash(firstName, lastName, age, getPesel(), phone, address);
     }
-}
+
+    public static class PersonBuilder {
+        private final String firstName;
+        private final String lastName;
+        private byte age;
+        private String pesel;
+        private String phone;
+        private String address;
+
+
+        public PersonBuilder(String firstName, String lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public PersonBuilder pesel(byte age) {
+            this.age=age;
+            return this;
+        }
+
+        public PersonBuilder pesel(String pesel) {
+            this.pesel=pesel;
+            return this;
+        }
+
+        public PersonBuilder phone(String phone) {
+            this.phone=phone;
+            return this;
+        }
+
+        public PersonBuilder address(String address) {
+            this.address=address;
+            return this;
+        }
+        public Person build(){
+            return new Person(this);
+        }
+        }
+    }
