@@ -1,6 +1,5 @@
 package _b_inheritance._b_2_interface_and_abstract_methods._b_2_3_abstract_method;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class Car extends Vehicle {
@@ -19,21 +18,11 @@ public class Car extends Vehicle {
 
     private Car(CarBuilder builder) {
         this.name = builder.name;
-        this.maxSpeed =  builder.maxSpeed;
-        this.engine =  builder.engine;
-        this.colour =  builder.colour;
-        this.year =  builder.year;
-
+        this.maxSpeed = builder.maxSpeed;
+        this.engine = builder.engine;
+        this.colour = builder.colour;
+        this.year = builder.year;
     }
-
-
-
-//    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
-//        this.name = name;
-//        this.maxSpeed = maxSpeed;
-//        this.engine = engine;
-//        this.colour = colour;
-//    }
 
     public void printName() {
         String intro = "The car's name is: ";
@@ -41,37 +30,19 @@ public class Car extends Vehicle {
         System.out.println(name);
     }
 
-//    public Car(Engine engine) {
-//        super(engine, NUMBER_OF_WHEELS);
-//    }
-
     public String getName() {
         return name;
     }
 
-    //    public void setName(String name) {
-//        this.name = name;
-//    }
-//
     public int getMaxSpeed() {
         return maxSpeed;
     }
 
-    //
-//    public void setMaxSpeed(int maxSpeed) {
-//        this.maxSpeed = maxSpeed;
-//    }
-//
     @Override
     public Engine getEngine() {
         return engine;
     }
 
-    //
-//    public void setEngine(Engine engine) {
-//        this.engine = engine;
-//    }
-//
     public Colour getColour() {
         return colour;
     }
@@ -79,24 +50,11 @@ public class Car extends Vehicle {
     public int getYear() {
         return year;
     }
-//
-//    public void setYear(int year) {
-//        this.year = year;
-//    }
-//
-//    public Car setColour(Colour colour) {
-//        this.colour = colour;
-//    }
 
-//    @Override
-//    public void setProducionDate(Date producionDate) {
-//        super.setProducionDate(producionDate);
-//    }
-@Override
-public int hashCode() {
-    return Objects.hash(getName(), getMaxSpeed(), getYear(), getEngine(), getColour());
-}
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getMaxSpeed(), getYear(), getEngine(), getColour());
+    }
 
     @Override
     public String toString() {

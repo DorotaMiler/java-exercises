@@ -6,6 +6,10 @@ Creation of a class containing:
 3 fileds
 2 methods: one returning a value, void, getters/setters,
 equals() & hashcode()
+
+-> Builder pattern aims to “Separate the construction of a
+complex object from its representation so that the same
+construction process can create different representations.”
  */
 
 import java.util.Objects;
