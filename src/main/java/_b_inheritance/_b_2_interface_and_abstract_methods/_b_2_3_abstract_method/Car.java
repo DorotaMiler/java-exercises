@@ -4,64 +4,30 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Car extends Vehicle {
-    private String name;
-    private int maxSpeed;
-    private int year;
-    private Engine engine;
-    private Colour colour;
+    private final String name;
+    private final int maxSpeed;
+    private final int year;
+    private final Engine engine;
+    private final Colour colour;
 
-    public Car() {
-        name = "default";
-        maxSpeed = 100;
-        engine = new Engine(1, 1);
-        colour = Colour.WHITE;
-    }
+//    public Car() {
+//        name = "default";
+//        maxSpeed = 100;
+//        engine = new Engine(1, 1);
+//        colour = Colour.WHITE;
+//    }
 
-    public Car(String name, int maxSpeed, Engine engine, Colour colour, int year) {
-        this.name = name;
-        this.maxSpeed = maxSpeed;
-        this.engine = engine;
-        this.colour = colour;
-        this.year = year;
-
-        static class CarBuilder {
-            private String name;
-            private int maxSpeed;
-            private int year;
-            private Engine engine;
-            private Colour colour;
-
-            public CarBuilder setName(String name) {
-                this.name = name;
-                return this;
-            }
-
-            public CarBuilder setMaxSpeed(int maxSpeed) {
-                this.maxSpeed = maxSpeed;
-                return this;
-            }
-
-            public CarBuilder setEngine(Engine engine) {
-                this.engine = engine;
-                return this;
-            }
-
-            public CarBuilder setColour(Colour colour) {
-                this.colour = colour;
-                return this;
-            }
-
-            public CarBuilder setYear(int year) {
-                this.year = year;
-                return this;
-            }
-
-            public Car createCar() {
-                return new Car(name, maxSpeed, engine, colour, year);
-            }
-        }
+    private Car(CarBuilder builder) {
+        this.name = builder.name;
+        this.maxSpeed =  builder.maxSpeed;
+        this.engine =  builder.engine;
+        this.colour =  builder.colour;
+        this.year =  builder.year;
 
     }
+
+
+
 //    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
 //        this.name = name;
 //        this.maxSpeed = maxSpeed;
@@ -83,39 +49,36 @@ public class Car extends Vehicle {
         return name;
     }
 
-//    public void setName(String name) {
+    //    public void setName(String name) {
 //        this.name = name;
 //    }
 //
-//    public int getMaxSpeed() {
-//        return maxSpeed;
-//    }
-//
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    //
 //    public void setMaxSpeed(int maxSpeed) {
 //        this.maxSpeed = maxSpeed;
 //    }
 //
-//    @Override
-//    public Engine getEngine() {
-//        return engine;
-//    }
-//
+    @Override
+    public Engine getEngine() {
+        return engine;
+    }
+
+    //
 //    public void setEngine(Engine engine) {
 //        this.engine = engine;
 //    }
 //
-//    public Colour getColour() {
-//        return colour;
-//    }
-//
-//    @Override
-//    public Date getProducionDate() {
-//        return super.getProducionDate();
-//    }
-//
-//    public int getYear() {
-//        return year;
-//    }
+    public Colour getColour() {
+        return colour;
+    }
+
+    public int getYear() {
+        return year;
+    }
 //
 //    public void setYear(int year) {
 //        this.year = year;
@@ -125,9 +88,29 @@ public class Car extends Vehicle {
 //        this.colour = colour;
 //    }
 
+//    @Override
+//    public void setProducionDate(Date producionDate) {
+//        super.setProducionDate(producionDate);
+//    }
+@Override
+public int hashCode() {
+    return Objects.hash(getName(), getMaxSpeed(), getYear(), getEngine(), getColour());
+}
+
+
     @Override
-    public void setProducionDate(Date producionDate) {
-        super.setProducionDate(producionDate);
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", year=" + year +
+                ", engine=" + engine +
+                ", colour=" + colour +
+                '}';
+    }
+
+    public Car createCar() {
+        return new Car(name, maxSpeed, engine, colour, year);
     }
 
     @Override
@@ -142,21 +125,37 @@ public class Car extends Vehicle {
                 getColour() == car.getColour();
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getMaxSpeed(), getYear(), getEngine(), getColour());
-    }
+    public static class CarBuilder {
+        private final String name;
+        private int maxSpeed;
+        private int year;
+        private Engine engine;
+        private Colour colour;
 
-    @Override
+        public CarBuilder setName(String name) {
+            this.name = name;
+            return this;
+        }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "name='" + name + '\'' +
-                ", maxSpeed=" + maxSpeed +
-                ", year=" + year +
-                ", engine=" + engine +
-                ", colour=" + colour +
-                '}';
+        public CarBuilder setMaxSpeed(int maxSpeed) {
+            this.maxSpeed = maxSpeed;
+            return this;
+        }
+
+        public CarBuilder setEngine(Engine engine) {
+            this.engine = engine;
+            return this;
+        }
+
+        public CarBuilder setColour(Colour colour) {
+            this.colour = colour;
+            return this;
+        }
+
+        public CarBuilder setYear(int year) {
+            this.year = year;
+            return this;
+        }
+
     }
 }

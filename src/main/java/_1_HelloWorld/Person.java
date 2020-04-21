@@ -11,25 +11,21 @@ equals() & hashcode()
 import java.util.Objects;
 
 public class Person {
-    String name;
-    byte age;
-    String pesel;
+    private String firstName;
+    private String lastName;
+    private byte age;
+    private String pesel;
+    private String phone;
+    private String address;
 
-    public Person(byte age) {
-        pesel = "";
-        this.age = age;
+    private Person(PersonBuilder builder) {
+  this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.age = builder.age;
+        this.phone = builder.phone;
+        this.address = builder.address;
     }
 
-    public Person(byte age, String pesel) {
-        this.age = age;
-        this.pesel = pesel;
-    }
-
-    public Person(String name, byte age, String pesel) {
-        this.name = name;
-        this.age = age;
-        this.pesel = pesel;
-    }
 
     public void whoAmI(String name, byte age) {
         System.out.println("You are " + name + " and you are " + age + " years old");
@@ -47,17 +43,12 @@ public class Person {
         return pesel;
     }
 
-    public void setPesel(long pesel) {
-        this.pesel = String.valueOf(pesel);
-    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     @Override
     public String toString() {
