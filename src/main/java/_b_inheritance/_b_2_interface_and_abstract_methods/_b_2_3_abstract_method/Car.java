@@ -113,20 +113,38 @@ public class Car extends Vehicle {
         return super.getProducionDate();
     }
 
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setColour(Colour colour) {
+        this.colour = colour;
+    }
+
+    @Override
+    public void setProducionDate(Date producionDate) {
+        super.setProducionDate(producionDate);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Car)) return false;
         Car car = (Car) o;
         return getMaxSpeed() == car.getMaxSpeed() &&
+                getYear() == car.getYear() &&
                 Objects.equals(getName(), car.getName()) &&
                 Objects.equals(getEngine(), car.getEngine()) &&
-                colour == car.colour;
+                getColour() == car.getColour();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getMaxSpeed(), getEngine(), colour);
+        return Objects.hash(getName(), getMaxSpeed(), getYear(), getEngine(), getColour());
     }
 
     @Override
