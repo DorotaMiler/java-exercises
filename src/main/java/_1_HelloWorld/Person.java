@@ -38,6 +38,8 @@ public class Person {
     }
 
     // Only getters, n setters to provide immutability
+    // object does not have any setter method, so it’s state
+    // can not be changed once it has been built.
     public String getMonth() {
         return pesel.substring(2, 3);
     }
@@ -114,7 +116,7 @@ public class Person {
             this.lastName = lastName;
         }
 
-        public PersonBuilder pesel(byte age) {
+        public PersonBuilder age(byte age) {
             this.age=age;
             return this;
         }
