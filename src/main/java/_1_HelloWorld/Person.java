@@ -23,13 +23,12 @@ public class Person {
     private String address;
 
     private Person(PersonBuilder builder) {
-  this.firstName = builder.firstName;
+        this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.age = builder.age;
         this.phone = builder.phone;
         this.address = builder.address;
     }
-
 
     public void whoAmI(String name, byte age) {
         System.out.println("You are " + name + " and you are " + age + " years old");
@@ -47,21 +46,20 @@ public class Person {
         return pesel;
     }
 
-
     public String getName() {
         return name;
     }
 
-
-
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Person{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", age=").append(age);
-        sb.append(", pesel='").append(pesel).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", pesel='" + pesel + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 
     @Override
@@ -70,12 +68,15 @@ public class Person {
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
         return age == person.age &&
-                getName().equals(person.getName()) &&
-                getPesel().equals(person.getPesel());
+                Objects.equals(firstName, person.firstName) &&
+                Objects.equals(lastName, person.lastName) &&
+                Objects.equals(getPesel(), person.getPesel()) &&
+                Objects.equals(phone, person.phone) &&
+                Objects.equals(address, person.address);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), age, getPesel());
+        return Objects.hash(firstName, lastName, age, getPesel(), phone, address);
     }
 }
