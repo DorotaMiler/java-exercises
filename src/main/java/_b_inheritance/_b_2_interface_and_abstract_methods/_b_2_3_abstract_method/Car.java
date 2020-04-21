@@ -4,9 +4,9 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Car extends Vehicle {
-
     private String name;
     private int maxSpeed;
+    private int year;
     private Engine engine;
     private Colour colour;
 
@@ -17,13 +17,51 @@ public class Car extends Vehicle {
         colour = Colour.WHITE;
     }
 
-    public Car(String name, int maxSpeed, Engine engine, Colour colour) {
+    public Car(String name, int maxSpeed, Engine engine, Colour colour, int year) {
         this.name = name;
         this.maxSpeed = maxSpeed;
         this.engine = engine;
         this.colour = colour;
-    }
+        this.year = year;
 
+        static class CarBuilder {
+            private String name;
+            private int maxSpeed;
+            private int year;
+            private Engine engine;
+            private Colour colour;
+
+            public CarBuilder setName(String name) {
+                this.name = name;
+                return this;
+            }
+
+            public CarBuilder setMaxSpeed(int maxSpeed) {
+                this.maxSpeed = maxSpeed;
+                return this;
+            }
+
+            public CarBuilder setEngine(Engine engine) {
+                this.engine = engine;
+                return this;
+            }
+
+            public CarBuilder setColour(Colour colour) {
+                this.colour = colour;
+                return this;
+            }
+
+            public CarBuilder setYear(int year) {
+                this.year = year;
+                return this;
+            }
+
+            public Car createCar() {
+                return new Car(name, maxSpeed, engine, colour, year);
+            }
+        }
+
+    }
 //    public Car(String name, Integer maxSpeed, Engine engine, Colour colour) {
 //        this.name = name;
 //        this.maxSpeed = maxSpeed;
