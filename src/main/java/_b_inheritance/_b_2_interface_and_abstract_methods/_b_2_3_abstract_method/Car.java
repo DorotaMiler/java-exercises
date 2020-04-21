@@ -83,47 +83,47 @@ public class Car extends Vehicle {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
-    }
-
-    @Override
-    public Engine getEngine() {
-        return engine;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
-
-    public Colour getColour() {
-        return colour;
-    }
-
-    @Override
-    public Date getProducionDate() {
-        return super.getProducionDate();
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void setColour(Colour colour) {
-        this.colour = colour;
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public int getMaxSpeed() {
+//        return maxSpeed;
+//    }
+//
+//    public void setMaxSpeed(int maxSpeed) {
+//        this.maxSpeed = maxSpeed;
+//    }
+//
+//    @Override
+//    public Engine getEngine() {
+//        return engine;
+//    }
+//
+//    public void setEngine(Engine engine) {
+//        this.engine = engine;
+//    }
+//
+//    public Colour getColour() {
+//        return colour;
+//    }
+//
+//    @Override
+//    public Date getProducionDate() {
+//        return super.getProducionDate();
+//    }
+//
+//    public int getYear() {
+//        return year;
+//    }
+//
+//    public void setYear(int year) {
+//        this.year = year;
+//    }
+//
+//    public Car setColour(Colour colour) {
+//        this.colour = colour;
+//    }
 
     @Override
     public void setProducionDate(Date producionDate) {
