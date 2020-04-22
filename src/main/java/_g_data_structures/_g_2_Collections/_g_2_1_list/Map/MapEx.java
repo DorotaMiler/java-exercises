@@ -18,11 +18,11 @@ public class MapEx {
         System.out.println("Size of a map -> employees: " + employees.size());
         System.out.println("22nd eployee on the list is: " + employees.get(22));
         System.out.println("Is the employees map empty: " + isMapEmpty);
+        System.out.println("Here is a range of values whoch map containts: " + employees.values());
         System.out.println("Does map contain value 'Dennis Pommn' " + employees.containsValue("Dennis Pommn"));
         System.out.println("Is there in a map key: 44: " + employees.containsKey(44));
         Set<Integer> keySet = employees.keySet();
         System.out.println("Keys: " + keySet);
-
-
+        System.out.println("Here are all records that employees map holds: "+Set<Map.Entry<Integer,String>>entrySet());
     }
 }
