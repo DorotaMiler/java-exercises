@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
+        // 1st example of usage
         Worker mariusz = new Worker("Mariusz", "Tela", 12000);
         Worker kasia = new Worker("Kasia", "Qubek", 3000);
         Worker daria = new Worker("Daria", "Jure", 7800);
