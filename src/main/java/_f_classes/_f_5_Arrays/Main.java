@@ -11,6 +11,8 @@ public class Main {
 
         Worker[] workers = {mariusz, kasia, daria, przemek};
         ComparatorEx comparatorEx = new ComparatorEx();
+        //TODO not sure what happens with the below sort() + where in this all is
+        //TODO compare() in ComparatorEx?
         Arrays.sort(workers, comparatorEx);
         display(workers);
 
