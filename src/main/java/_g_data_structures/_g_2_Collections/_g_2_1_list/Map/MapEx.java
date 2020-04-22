@@ -31,7 +31,7 @@ public class MapEx {
     }
 
     public static void printEntrySet() {
-        // records display in a set: key-value
+        // records display in a set(ordered manner): key-value
         Set<Map.Entry<Integer, String>> entrySet = employees.entrySet();
         for (Map.Entry<Integer, String> entry : entrySet) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
