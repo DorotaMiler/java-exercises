@@ -1,9 +1,10 @@
 package _9_small_projects.QuizApp;
 
 public enum Category {
-    TECHNOLOGY(1),
-    BIOLOGY(2),
-    COVID19;
+    COLLECTIONS(1),
+    LOOPS(2),
+    INTERFACE(3),
+    FRONTEND(4);
 
     private Integer order;
 
