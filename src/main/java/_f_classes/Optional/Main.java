@@ -21,8 +21,8 @@ public class Main {
         System.out.println(optionalEx.sum(firstParam, secondParam));
 
         // Optional.isPresent - checks the value is present or not
-        System.out.println("First parameter is present: " + firstParam.isPresent());
-        System.out.println("Second parameter is present: " + secondParam.isPresent());
+        System.out.println("First parameter is present: " + firstParam.isPresent());  // false
+        System.out.println("Second parameter is present: " + secondParam.isPresent());  // true
 
         // Optional.orElse - return the value if present otherwise the default passed value
         Integer value1 = firstParam.orElse((new Integer(2)));
