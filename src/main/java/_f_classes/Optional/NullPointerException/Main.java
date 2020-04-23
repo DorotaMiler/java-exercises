@@ -13,5 +13,16 @@ public class Main {
 
         // correct:
         users[0].setName("Adam");
+
+        User user2 = fetchName("Lukasz");
+        if (user2 != null) {
+            System.out.println(user2.getName());
+        }
+    }
+
+    private static User fetchName(String name) {
+        if ("Dorota".equals(name)) {
+            return new User("Dorota");
+        }
     }
 }
