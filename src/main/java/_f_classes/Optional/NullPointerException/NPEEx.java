@@ -1,6 +1,6 @@
 package _f_classes.Optional.NullPointerException;
 
-public class Main {
+public class NPEEx {
     public static void main(String[] args) {
         User user1 = new User();
         // wrong: user1.getName() -> method exec on null
@@ -23,6 +23,7 @@ public class Main {
     private static User fetchName(String name) {
         if ("Dorota".equals(name)) {
             return new User("Dorota");
-        }
+        } else
+            return null;
     }
 }
