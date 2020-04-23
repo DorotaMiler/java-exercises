@@ -2,6 +2,11 @@ package _f_classes.Optional;
 
 import java.util.Optional;
 
+//When getting an Optional return type, we're likely to check
+// if the value is missing, leading to fewer NullPointerExceptions in
+// the applications.
+// * An Optional type can be a return type for most methods
+
 public class Main {
     public static void main(String[] args) {
         OptionalEx optionalEx = new OptionalEx();
