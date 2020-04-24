@@ -7,6 +7,11 @@ public class Card {
     private Rank rank;
     private Suit suit;
 
+    public Card(Rank rank, Suit suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
     public Rank getRank() {
         return rank;
     }
@@ -15,12 +20,39 @@ public class Card {
         return suit;
     }
 
-//    public String getDescription(Rank rank, Suit suit) {
-//
-//        StringJoiner joiner = new StringJoiner(" - ", "{", "}");
-//        String result = joiner.add("Dorota").add("is").add("ill").add("and").add("stays").add("home").toString();
-//        System.out.println(result);
-//    }
+    public void setRank(Rank rank) {
+        this.rank = rank;
+    }
+
+    public void setSuit(Suit suit) {
+        this.suit = suit;
+    }
+
+    public static String getDescription(Card card) {
+        StringJoiner joiner = new StringJoiner(" - ", "{", "}");
+        String result = joiner.add(card.getRank().name().toLowerCase()).add(card.getSuit().name().toLowerCase()).toString();
+        return result;
+    }
+
+    public static void intro{
+        System.out.println("Let's create a card!");
+        System.out.println("Please enter a rank name: ");
+        scanner();
+    }
+
+    public static String scanRank{
+        System.out.println("Please enter a rank name: ");
+        Scanner scan = new Scanner(System.in);
+        String rank = scan.nextLine();
+        return rank;
+    }
+
+    public static String scanSuit{
+        System.out.println("Please enter a suit name: ");
+        Scanner scan = new Scanner(System.in);
+        String suit = scan.nextLine();
+        return suit;
+    }
 
 
 //    public String suitChoice() {
@@ -69,7 +101,7 @@ public class Card {
 //            }
 //            return (rank.toString() + " - " + rank.name().)
 //        }
-    }
+}
 
 //    public void suitMenu() {
 //        System.out.println("Please follow below instructions:\n");
@@ -95,11 +127,11 @@ public class Card {
 //        System.out.println("------------------------------------------------------------");
 //    }
 //
-//    public int scanChoice() {
-//        Scanner scan = new Scanner(System.in);
-//        int chosenOption = scan.nextInt();
-//        return chosenOption;
-//    }
+    public int scanChoice() {
+        Scanner scan = new Scanner(System.in);
+        int chosenOption = scan.nextInt();
+        return chosenOption;
+    }
 //
 //    @Override
 //    public String toString() {
