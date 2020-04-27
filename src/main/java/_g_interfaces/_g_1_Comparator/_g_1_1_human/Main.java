@@ -1,6 +1,7 @@
 package _g_interfaces._g_1_Comparator._g_1_1_human;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -22,8 +23,21 @@ public class Main {
         people.add(new Human.HumanBuilder("Jakub", "Trele")
                 .sex('M')
                 .build());
+        people.add(new Human.HumanBuilder("Jakub", "Wrona")
+                .sex('M')
+                .build());
+        people.add(new Human.HumanBuilder("Anna", "Juka")
+                .sex('M')
+                .build());
 
         for (Human human : people) {
+            System.out.println(human);
+        }
+
+        Collections.sort(people);
+
+        System.out.println("People sorted by last names and secondary by names: ");
+        for(Human human:people){
             System.out.println(human);
         }
     }

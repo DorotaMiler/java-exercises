@@ -1,13 +1,13 @@
 package _g_interfaces._g_1_Comparator._g_1_1_human;
 
-public class Human {
+public class Human implements Comparable<Human> {
     private final String name;
     private final String lastName;
     private final char sex;
 
     public Human(HumanBuilder builder) {
         this.name = builder.name;
-        this.lastName=builder.name;
+        this.lastName=builder.lastName;
         this.sex=builder.sex;
     }
 
@@ -51,5 +51,16 @@ public class Human {
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Human human) {
+        int comparedLastNames = lastName.compareTo(human.lastName);
+
+        if(comparedLastNames==0){
+            return name.compareTo(human.name);
+        }else{
+            return comparedLastNames;
+        }
     }
 }
