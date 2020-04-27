@@ -1,4 +1,4 @@
-package _g_data_structures._g_1_tables;
+package _h_data_structures._h_1_tables;
 
 public class TableEx {
     int[] a;

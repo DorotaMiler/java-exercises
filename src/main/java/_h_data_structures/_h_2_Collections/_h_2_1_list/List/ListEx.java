@@ -1,4 +1,4 @@
-package _g_data_structures._g_2_Collections._g_2_1_list.List;
+package _h_data_structures._h_2_Collections._h_2_1_list.List;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
