@@ -40,3 +40,9 @@ public class Car {
 
 // getters and setters
 }
+
+Class
+
+if Insatnce ==null{
+    new Instance
+        }

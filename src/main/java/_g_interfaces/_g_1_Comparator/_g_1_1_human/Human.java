@@ -23,7 +23,6 @@ public class Human implements Comparable<Human> {
         return sex;
     }
 
-
     public static class HumanBuilder {
         private char sex;
         private final String name;
