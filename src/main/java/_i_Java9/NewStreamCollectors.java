@@ -11,7 +11,7 @@ public class NewStreamCollectors {
         final var modifiedList = list.stream()
                 .filter(n -> n >= 5)
                 .collect(Collectors.toUnmodifiableList());
-        
+
         modifiedList.forEach(System.out::println);
 //        final var unmodifiedList=List.copyOf(list);
 
