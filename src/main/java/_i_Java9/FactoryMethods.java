@@ -8,14 +8,14 @@ import java.util.Set;
 public class FactoryMethods {
 
     public static void main(String[] args) {
-        //Zadanie 1: Używając metody statycznej stwórz set używająć metody of()
+        //Set creation utilizing static method of()
         Set<String> personSet = new HashSet<>();
         personSet.add("Person1");
         personSet.add("Person2");
         Set<String> personSet1 = Set.of("Person1", "Person2");
         System.out.println(personSet1);
 
-        //Zadanie 2: Używająć metody statycznej ofEntries utwórz HashMape<Integer,String>
+        //HashMape<Integer,String> creation utilizing static method ofEntries()
         Map<Integer, String> mapa = new HashMap<>();
         mapa.put(1, "Osoba1");
         mapa.put(2, "Osoba2");
