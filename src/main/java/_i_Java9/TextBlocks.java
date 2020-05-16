@@ -3,7 +3,7 @@ package _i_Java9;
 public class TextBlocks {
 
     public static void main(String[] args) {
-        //Zadanie 14: Utwórz zmienna lokalną używająć bloku tekstu. Obydwie wartości wyświetlone mają być równe (equals)
+        // both Textblocks are both eqal & ==
         final var mString = "Hi\nInfoshare\nPeople\nTests\nNew\nStrings\nFeatures";
         final var textBlock = """
                 Hi
