@@ -28,12 +28,12 @@ public class User {
         this.password = password;
     }
 
-    public User(String name) {
-        if (StringUtils.isEmpty(name)) {
-            throw new IllegalArgumentException("Name is a mandatory field to be provided");
-        }
-        this.name = name;
-    }
+//    public User(String name) {
+//        if (StringUtils.isEmpty(name)) {
+//            throw new IllegalArgumentException("Name is a mandatory field to be provided");
+//        }
+//        this.name = name;
+//    }
 
     public String getLogin() {
         return login;

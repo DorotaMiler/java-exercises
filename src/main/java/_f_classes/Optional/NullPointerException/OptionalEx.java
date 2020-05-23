@@ -5,6 +5,11 @@ import java.util.Optional;
 public class OptionalEx {
     public static void main(String[] args) {
 
+        User user1 = new User("dori");
+        System.out.println(user1);
+        user1.setPassword("newPassword");
+        System.out.println(user1);
+
         Optional<User> user1 = Optional.of(new User("Anna"));
         Optional<User> user2 = Optional.empty();
         Optional<User> user3 = Optional.ofNullable(null);

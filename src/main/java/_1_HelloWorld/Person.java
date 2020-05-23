@@ -12,6 +12,8 @@ complex object from its representation so that the same
 construction process can create different representations.”
  */
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Objects;
 
 public class Person {
@@ -58,7 +60,7 @@ public class Person {
 
     public String getFirstName() {
         return firstName;
-    }return pesel;
+    }
 
     public String getPhone() {
         return phone;
@@ -110,8 +112,14 @@ public class Person {
         private String phone;
         private String address;
 
-
         public PersonBuilder(String firstName, String lastName) {
+            if (StringUtils.isEmpty(firstName) || StringUtils.isBlank(firstName)){
+                throw new IllegalArgumentException("First name is necessary to be given for user to be created");
+            }
+
+            if (StringUtils.isEmpty(lastName) || StringUtils.isBlank(lastName)) {
+                throw new IllegalArgumentException("Password is necessary to be given for user to be created")
+            }
             this.firstName = firstName;
             this.lastName = lastName;
         }
